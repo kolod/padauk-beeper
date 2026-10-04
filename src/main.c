@@ -3,6 +3,7 @@
 #include "delay.h"
 #include "melodies/komarovo_optimized.h"
 #include "config.h"
+#include "startup.h"
 
 uint8_t buttonState;     // debounced state, 1 = pressed
 uint8_t buttonDebounce;  // ms the raw reading has differed from buttonState
@@ -62,8 +63,24 @@ void playMelody() {
   }
 }
 
+// Low-power pin setup:
+// - only the button keeps its digital input (it is also the wake-up source);
+//   all other inputs are disconnected, so floating pins neither leak current
+//   nor wake the chip. No pull-ups on unused pins: a pin tied to GND on the
+//   board would draw current through them.
+// - the buzzer pin is an output driven low, also while asleep
+void ioSetup() {
+  PADIER = (1 << BUTTON_BIT);
+  PAPH = (1 << BUTTON_BIT);
+  PA = 0;
+  PAC = (1 << BUZZER_BIT);
+#ifdef PBDIER
+  PBDIER = 0;
+#endif
+}
+
 void main() {
-  buttonSetup();
+  ioSetup();
 
   uint8_t clkmd = CLKMD;
 
@@ -71,9 +88,8 @@ void main() {
     // Wake-ups from bounce, noise or release are filtered out here;
     // a press that stopped the melody is already in buttonState, so it won't restart it
     if (buttonSettle()) {
-      buzzerOn();
       playMelody();
-      buzzerOff();
+      tone(0);
       continue;
     }
 
@@ -88,10 +104,17 @@ void main() {
 }
 
 // Startup code - Setup/calibrate system clock
-unsigned char _sdcc_external_startup(void) {
-//#ifdef PMS150G
-//  PDK_SET_FUSE(FUSE_LVR_2V);
-//#endif
+unsigned char STARTUP_FUNCTION(void) {
+  // Lowest low-voltage reset level, so the device keeps working until the
+  // battery is nearly empty and then resets cleanly instead of misbehaving.
+  // Other fuse options are kept at their blank-chip values.
+#if defined(PMS150C)
+  PDK_SET_FUSE(FUSE_SECURITY_OFF | FUSE_LVR_1V8 | FUSE_IO_DRV_NORMAL | FUSE_BOOTUP_FAST);
+#elif defined(PMS150G)
+  PDK_SET_FUSE(FUSE_SECURITY_OFF | FUSE_LVR_1V8 | FUSE_PA5_OPEN_DRAIN | FUSE_BOOTUP_FAST);
+#elif defined(MISCLVR_1V8)
+  MISCLVR = (uint8_t)MISCLVR_1V8;  // PFS154 / PFS122: LVR is a register, not a fuse
+#endif
 
   // Initialize the system clock (CLKMD register) with the IHRC, ILRC, or EOSC clock source and correct divider.
   // The AUTO_INIT_SYSCLOCK() macro uses F_CPU (defined in the Makefile) to choose the IHRC or ILRC clock source and divider.
