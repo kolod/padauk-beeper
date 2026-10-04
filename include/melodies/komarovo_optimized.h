@@ -195,11 +195,14 @@ const melody_data melody[92] = {
 
 void tone(uint8_t frequency)
 {
-  if (frequency <= 0) {
-    TM2B = 0;
+  if (frequency == 0) {
+    // TM2B = 0 would still toggle the output at ~17.9 kHz, so stop the timer instead
+    TM2C = 0;
   } else {
     TM2S = 3 << 5 | (7 - 1);
     TM2B = frequency;
+    TM2CT = 0;
+    TM2C = (uint8_t)(TM2C_MODE_PERIOD | TM2C_OUT_PA3 | TM2C_CLK_IHRC);
   }
 }
 

@@ -4,18 +4,44 @@
 #include "melodies/komarovo_optimized.h"
 #include "config.h"
 
-uint8_t buttonPressed;
+uint8_t buttonState;     // debounced state, 1 = pressed
+uint8_t buttonDebounce;  // ms the raw reading has differed from buttonState
 
+// Call once per ms. Returns 1 on a debounced press (released -> pressed).
+uint8_t buttonPoll() {
+  if (isButtonActive() == buttonState) {
+    buttonDebounce = 0;
+    return 0;
+  }
+
+  if (++buttonDebounce < BUTTON_DEBOUNCE_MS) {
+    return 0;
+  }
+
+  buttonDebounce = 0;
+  buttonState ^= 1;
+  return buttonState;
+}
+
+// Returns 1 if the button was pressed during the delay.
 uint8_t delay_ms(uint16_t time) {
   for (uint16_t i = 0; i < time; i++) {
     _delay_ms(1);
 
-    if (isButtonActive()) {
-      if (!buttonPressed) {
-        return 1;
-      }
-    } else {
-      buttonPressed = 0;
+    if (buttonPoll()) {
+      return 1;
+    }
+  }
+
+  return 0;
+}
+
+// Wait until the raw button reading matches the debounced state.
+// Returns 1 if that settled into a new press.
+uint8_t buttonSettle() {
+  while (isButtonActive() != buttonState) {
+    if (delay_ms(1)) {
+      return 1;
     }
   }
 
@@ -42,31 +68,22 @@ void main() {
   uint8_t clkmd = CLKMD;
 
   while (1) {
-    if (isButtonActive()) {
-      if (buttonPressed)
-      {
-        return;
-      }
-
-      CLKMD = clkmd;
-
-      buttonPressed = 1;
+    // Wake-ups from bounce, noise or release are filtered out here;
+    // a press that stopped the melody is already in buttonState, so it won't restart it
+    if (buttonSettle()) {
       buzzerOn();
       playMelody();
-      if (isButtonActive()) {
-        buttonPressed = 1;
-      }
       buzzerOff();
-    } else {
-      buttonPressed = 0;
+      continue;
     }
 
-    buzzerOff();
-    
     CLKMD = 0xF4;
     CLKMD &= ~CLKMD_ENABLE_IHRC;
 
     sleep();
+
+    // Back to the calibrated IHRC clock, delays depend on it
+    CLKMD = clkmd;
   }
 }
 

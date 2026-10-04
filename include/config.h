@@ -5,13 +5,16 @@
 
 #define BUTTON_BIT 4 // PA4
 
-#define isButtonActive()    !(PA & (1 << BUTTON_BIT))
+#define BUTTON_DEBOUNCE_MS 20
+
+#define isButtonActive()    (!(PA & (1 << BUTTON_BIT)))
 
 #define sleep() __asm stopsys __endasm;
 
+// Pin is driven low while the timer is stopped (rests); tone() starts/stops TM2
 #define buzzerOn()\
-    PAC |= (1 << BUZZER_BIT);\
-    TM2C = (uint8_t)(TM2C_MODE_PERIOD | TM2C_OUT_PA3 | TM2C_CLK_IHRC);
+    PA &= ~(1 << BUZZER_BIT);\
+    PAC |= (1 << BUZZER_BIT);
 
 #define buzzerOff()\
     PAC &= ~(1 << BUZZER_BIT);\
