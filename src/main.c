@@ -1,105 +1,123 @@
 #include <pdk/device.h>
 #include "auto_sysclock.h"
 #include "delay.h"
-#include "melodies/komarovo_optimized.h"
+#include "melodies.h"
 #include "config.h"
 #include "startup.h"
 
-uint8_t buttonState;     // debounced state, 1 = pressed
-uint8_t buttonDebounce;  // ms the raw reading has differed from buttonState
+// Timer16 runs from ILRC / 64 and wakes the chip on every rising edge of
+// counter bit 9, i.e. every 1024 * 64 = 65536 ILRC cycles (~1.2 s)
+#define PAUSE_WAKEUPS ((PAUSE_SECONDS * ILRC_FREQ + 32768UL) / 65536UL)
 
-// Call once per ms. Returns 1 on a debounced press (released -> pressed).
-uint8_t buttonPoll() {
-  if (isButtonActive() == buttonState) {
-    buttonDebounce = 0;
-    return 0;
-  }
+uint8_t clkmd;  // calibrated IHRC system clock, set by the startup code
 
-  if (++buttonDebounce < BUTTON_DEBOUNCE_MS) {
-    return 0;
-  }
-
-  buttonDebounce = 0;
-  buttonState ^= 1;
-  return buttonState;
+void interrupt(void) __interrupt(0) {
+  INTRQ = 0;  // only used to wake up from stopexe
 }
 
-// Returns 1 if the button was pressed during the delay.
-uint8_t delay_ms(uint16_t time) {
-  for (uint16_t i = 0; i < time; i++) {
+void delay_ms(uint8_t time) {
+  while (time--) {
     _delay_ms(1);
-
-    if (buttonPoll()) {
-      return 1;
-    }
-  }
-
-  return 0;
-}
-
-// Wait until the raw button reading matches the debounced state.
-// Returns 1 if that settled into a new press.
-uint8_t buttonSettle() {
-  while (isButtonActive() != buttonState) {
-    if (delay_ms(1)) {
-      return 1;
-    }
-  }
-
-  return 0;
-}
-
-void playMelody() {
-  for (int thisNote = 0; thisNote < MELODY_SIZE; thisNote++) {   
-    tone(MELODY_TONE(thisNote));
-    if (delay_ms(MELODY_DURATION(thisNote))) {
-      return;
-    }
-    
-    tone(0);
-    if (delay_ms(MELODY_NO_TONE_DURATION(thisNote))) {
-      return;
-    }
   }
 }
 
-// Low-power pin setup:
-// - only the button keeps its digital input (it is also the wake-up source);
-//   all other inputs are disconnected, so floating pins neither leak current
-//   nor wake the chip. No pull-ups on unused pins: a pin tied to GND on the
-//   board would draw current through them.
-// - the buzzer pin is an output driven low, also while asleep
-void ioSetup() {
-  PADIER = (1 << BUTTON_BIT);
-  PAPH = (1 << BUTTON_BIT);
+void tone(uint8_t pitch) {
+  if (pitch == R) {
+    // TM2B = 0 would still toggle the output at ~62 kHz, so stop the timer
+    TM2C = 0;
+  } else {
+    TM2S = 3 << 5;  // prescaler /64, scaler /1
+    TM2B = note_tm2b[pitch];
+    TM2CT = 0;
+    TM2C = (uint8_t)(TM2C_MODE_PERIOD | TM2C_OUT_PA3 | TM2C_CLK_IHRC);
+  }
+}
+
+void playMelody(uint8_t number) {
+  uint8_t i = 0;
+
+  // Skip to the selected melody: each one ends with 0
+  while (number) {
+    if (melodies[i++] == 0) {
+      number--;
+    }
+  }
+
+  uint8_t unit = melodies[i++];
+  uint8_t note;
+
+  while ((note = melodies[i++])) {
+    uint8_t length = duration_16ths[note & 7];
+
+    tone(note >> 3);
+    while (--length) {
+      delay_ms(unit);
+    }
+    delay_ms(unit - NOTE_GAP_MS);
+
+    tone(R);
+    delay_ms(NOTE_GAP_MS);
+  }
+}
+
+// Read the select pins once with pull-ups, then disconnect them again,
+// so a pin tied to GND draws no current afterwards.
+uint8_t readSelection() {
+  PAPH = (uint8_t)SEL_MASK;
+  PADIER = (uint8_t)SEL_MASK;
+  _delay_ms(1);  // let the pull-ups charge the pins
+
+  uint8_t pins = ~PA;
+
+  PADIER = 0;
+  PAPH = 0;
+
+  uint8_t selection = 0;
+  if (pins & (1 << SEL0_BIT)) selection |= 1;
+  if (pins & (1 << SEL1_BIT)) selection |= 2;
+  if (pins & (1 << SEL2_BIT)) selection |= 4;
+  return selection;
+}
+
+// Low-power sleep between melodies: only ILRC and Timer16 keep running
+void pause() {
+  CLKMD = (uint8_t)(CLKMD_ILRC | CLKMD_ENABLE_ILRC | CLKMD_ENABLE_IHRC);
+  CLKMD &= ~CLKMD_ENABLE_IHRC;
+
+  T16M = (uint8_t)(T16M_CLK_ILRC | T16M_CLK_DIV64 | T16M_INTSRC_9BIT);
+  T16C = 0;
+  INTRQ = 0;
+  INTEN = INTEN_T16;
+  __engint();
+
+  for (uint8_t i = PAUSE_WAKEUPS; i; i--) {
+    __stopexe();
+  }
+
+  __disgint();
+  INTEN = 0;
+  T16M = T16M_CLK_DISABLE;
+
+  // Back to the calibrated IHRC clock, delays and TM2 depend on it
+  CLKMD = clkmd;
+}
+
+void main() {
+  // All pins: digital input off (floating pins neither leak nor wake the chip),
+  // no pull-ups; the buzzer pin is an output driven low, also while asleep
   PA = 0;
   PAC = (1 << BUZZER_BIT);
 #ifdef PBDIER
   PBDIER = 0;
 #endif
-}
 
-void main() {
-  ioSetup();
+  clkmd = CLKMD;
+  uint8_t selection = readSelection();
 
-  uint8_t clkmd = CLKMD;
-
+  // Plays until the battery is empty (low-voltage reset at 1.8 V)
   while (1) {
-    // Wake-ups from bounce, noise or release are filtered out here;
-    // a press that stopped the melody is already in buttonState, so it won't restart it
-    if (buttonSettle()) {
-      playMelody();
-      tone(0);
-      continue;
-    }
-
-    CLKMD = 0xF4;
-    CLKMD &= ~CLKMD_ENABLE_IHRC;
-
-    sleep();
-
-    // Back to the calibrated IHRC clock, delays depend on it
-    CLKMD = clkmd;
+    playMelody(selection);
+    pause();
   }
 }
 

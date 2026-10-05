@@ -3,13 +3,18 @@
 
 #define BUZZER_BIT 3 // PA3 (TM2PWM)
 
-#define BUTTON_BIT 4 // PA4
+// Melody select, read once at boot with internal pull-ups.
+// Pin tied to GND = 1, open = 0; all open selects melody 0.
+#define SEL0_BIT 4 // PA4
+#define SEL1_BIT 6 // PA6
+#define SEL2_BIT 7 // PA7
+#define SEL_MASK ((1 << SEL0_BIT) | (1 << SEL1_BIT) | (1 << SEL2_BIT))
 
-#define BUTTON_DEBOUNCE_MS 20
+// Pause between melodies. Approximate: it is timed by the ILRC oscillator,
+// which drifts with voltage and temperature.
+#define PAUSE_SECONDS 10
 
-#define isButtonActive()    (!(PA & (1 << BUTTON_BIT)))
-
-#define sleep() __asm stopsys __endasm;
-
+// Silence at the end of every note, so repeated notes are heard separately
+#define NOTE_GAP_MS 25
 
 #endif
