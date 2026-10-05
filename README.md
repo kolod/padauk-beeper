@@ -67,6 +67,7 @@ and an [Easy PDK programmer](https://github.com/free-pdk/easy-pdk-programmer-har
 The toolchain (SDCC) and the platform are installed automatically on the first build.
 
 ```sh
+cd software
 pio run                      # build all targets
 pio run -e pfs154            # build one target
 pio run -e pfs154 -t upload  # build and flash
@@ -78,7 +79,7 @@ the internal oscillator calibration during flashing. It is calibrated for
 
 ## Configuration
 
-These settings are in [include/config.h](include/config.h):
+These settings are in [software/include/config.h](software/include/config.h):
 
 | Setting | Default | Meaning |
 |---|---|---|
@@ -92,7 +93,7 @@ drifts with voltage and temperature, so expect roughly ±30 %.
 
 ## Adding or changing melodies
 
-Melodies are in [include/melodies.h](include/melodies.h). Each melody is
+Melodies are in [software/include/melodies.h](software/include/melodies.h). Each melody is
 stored as:
 
 ```c
@@ -120,13 +121,13 @@ even on the 1K-word chips.
 ## Project layout
 
 ```
-platformio.ini            build targets; ROM limits are given in bytes (2 per word)
-src/main.c                firmware: selection, player, sleep, startup code
-include/config.h          pins and timing settings
-include/melodies.h        note table and melodies
-include/delay.h           cycle-counted busy-wait delays
-include/auto_sysclock.h   system clock and calibration selection from F_CPU
-include/startup.h         SDCC startup function name for older/newer versions
+software/platformio.ini            build targets; ROM limits are given in bytes (2 per word)
+software/src/main.c                firmware: selection, player, sleep, startup code
+software/include/config.h          pins and timing settings
+software/include/melodies.h        note table and melodies
+software/include/delay.h           cycle-counted busy-wait delays
+software/include/auto_sysclock.h   system clock and calibration selection from F_CPU
+software/include/startup.h         SDCC startup function name for older/newer versions
 ```
 
 `millis.h`, `serial.h` and `tone.h` are leftovers from the project template
