@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Type="DipTrace-PatternLibrary" Version="5.3.5.1" Name="Beeper" Hint="Padauk beeper footprints" UID32="662131808" Units="mm">
+<PadStyles>
+<PadStyle Name="PadT0" Type="Through" HoleType="Round" Hole="0">
+<MainStack Shape="Ellipse" Width="0" Height="0" XOff="0" YOff="0" />
+<MaskPaste CustomSwell="0" CustomShrink="0" />
+</PadStyle>
+<PadStyle Name="PadT1" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.27" Height="5.08" Corner="0" />
+</PadStyle>
+<PadStyle Name="PadT2" Type="Surface">
+<MainStack Shape="Ellipse" Width="17.8" Height="17.8" />
+<MaskPaste TopMask="Open" BotMask="Open" TopPaste="No Solder" BotPaste="No Solder" />
+</PadStyle>
+<PadStyle Name="PadT3" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.2" Height="4" Corner="0" />
+</PadStyle>
+<PadStyle Name="PadT4" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.11" Height="1.47" Corner="22.5225" />
+<Terminals>
+<Terminal Shape="Rectangle" X="0.1" Y="0" Angle="0" Width="0.5" Height="1.25" Corner="0" />
+</Terminals>
+</PadStyle>
+<PadStyle Name="PadT5" Type="Through" HoleType="Round" Hole="1">
+<MainStack Shape="Rectangle" Width="1.7" Height="1.7" XOff="0" YOff="0" Corner="0" />
+</PadStyle>
+<PadStyle Name="PadT6" Type="Through" HoleType="Round" Hole="1">
+<MainStack Shape="Ellipse" Width="1.7" Height="1.7" XOff="0" YOff="0" />
+</PadStyle>
+<PadStyle Name="PadT7" Type="Surface">
+<MainStack Shape="Rectangle" Width="1" Height="1.5" Corner="0" />
+<MaskPaste TopMask="Open" BotMask="Open" TopPaste="No Solder" BotPaste="No Solder" />
+</PadStyle>
+<PadStyle Name="PadT8" Type="Surface">
+<MainStack Shape="Rectangle" Width="0.98" Height="1.42" Corner="25.5102" />
+<Terminals>
+<Terminal Shape="Rectangle" X="0.095" Y="0" Angle="0" Width="0.4" Height="1.25" Corner="0" />
+</Terminals>
+</PadStyle>
+<PadStyle Name="PadT9" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.95" Height="0.6" Corner="25" />
+</PadStyle>
+</PadStyles>
+<Categories>
+<Category Number="0">
+<Name>Capacitors</Name>
+<Types>
+<Type Number="0">
+<Name>'Chip</Name>
+<SubTypes />
+</Type>
+</Types>
+</Category>
+</Categories>
+<Patterns>
+<Pattern Id="0" Mounting="SMD" Width="23.74" Height="20" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT1" DefStyle="N" X="-10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT1" DefStyle="N" X="10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+<Pad Id="3" Style="PadT2" DefStyle="N" X="0" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Obround" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-10" Y="-10" />
+<Point X="10" Y="10" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polygon" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-11.87" Y="-2.79" />
+<Point X="-11.87" Y="2.79" />
+<Point X="-10.88" Y="2.79" />
+<Point X="-10.88" Y="3.64" />
+<Point X="-9.44" Y="7.62" />
+<Point X="9.43" Y="7.63" />
+<Point X="10.88" Y="3.64" />
+<Point X="10.88" Y="2.79" />
+<Point X="11.87" Y="2.79" />
+<Point X="11.87" Y="-2.79" />
+<Point X="10.88" Y="-2.79" />
+<Point X="10.88" Y="-5.5" />
+<Point X="8.74" Y="-7.64" />
+<Point X="-8.74" Y="-7.64" />
+<Point X="-10.88" Y="-5.5" />
+<Point X="-10.88" Y="-2.79" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Filename>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\3d_models\Keystone 3034.STEP</Path>
+<Var>C:\Users\alexa\Projects\aram\beeper\soft\hardware\3d_models\Keystone 3034.STEP</Var>
+</Filename>
+<Rotate X="90" Y="0" Z="-180" />
+<Offset X="0" Y="7.4" Z="-3.85" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern Id="1" Mounting="SMD" Width="12.9" Height="12.7" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>Buzzer_Murata_PKLCS1212E</Name>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT3" DefStyle="N" X="-5.6" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT3" DefStyle="N" X="5.6" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.35" Y="2.6" />
+<Point X="-6.35" Y="6.35" />
+<Point X="6.35" Y="6.35" />
+<Point X="6.35" Y="2.6" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.35" Y="-2.6" />
+<Point X="-6.35" Y="-6.35" />
+<Point X="6.35" Y="-6.35" />
+<Point X="6.35" Y="-2.6" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6" Y="-6" />
+<Point X="6" Y="6" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.45" Y="-6.25" />
+<Point X="6.45" Y="6.25" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern Id="2" Mounting="SMD" Width="3.22" Height="1.88" Orientation="0" LockTypeChange="Y" Type="IPC-7351" Float1="0" Float2="0" Float3="0" Int1="1" Int2="0">
+<Name>CAP_0805_N</Name>
+<Name_Unique>CAP_0805_INCH</Name_Unique>
+<Category Index="0">
+<Name>Capacitors</Name>
+<CategoryTypes>
+<CategoryType>
+<Type Index="0">'Chip</Type>
+</CategoryType>
+</CategoryTypes>
+</Category>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<RecoveryCode Generator="Y" Model="Y">[Y;Chip;1;N;Y;1;0;0;Y;Y;N;N;101;Default;|1;;;1.1;;;1.8;2;2.2;0.2;-0.2;1.05;1.25;1.45;0.2;-0.2;0.25;0.5;0.75;0.25;-0.25;;;;;;0.59;1.11;1.47;1.11|0;|;;;;;;;;;0.5;0.5;0.5|||||;;;1|||||||||12648447;15461355;16119285;Y]</RecoveryCode>
+<AddFields>
+<AddField Type="Text">
+<Name>Case Info</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Polaring</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>3d Model</Name>
+<Text/>
+</AddField>
+<AddField Type="Link">
+<Name>Comp Datasheet</Name>
+<Text/>
+</AddField>
+<AddField Type="Link">
+<Name>Old Patt Datasheet</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>History</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Old Lib Name</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Old Pattern Name</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 1</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 2</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 3</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 4</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 5</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 6</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 7</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 8</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 9</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 10</Name>
+<Text/>
+</AddField>
+</AddFields>
+<DefPad Style="PadT4" />
+<Pads>
+<Pad Id="1" Style="PadT4" DefStyle="Y" X="-0.85" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT4" DefStyle="Y" X="0.85" Y="0" Angle="3.14159" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Outline" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1" Y="0.625" />
+<Point X="1" Y="-0.625" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.12" Y="0.73" />
+<Point X="0.12" Y="0.73" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.12" Y="-0.73" />
+<Point X="0.12" Y="-0.73" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.1" Y="0.73" />
+<Point X="1.1" Y="-0.73" />
+</Points>
+</Shape>
+<Shape Id="5" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1.61" Y="0.94" />
+<Point X="1.61" Y="-0.94" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="1.1" AutoColor="4934475" Type="IPC-7351" KeepPins="N">
+<Filename>
+<Path>C:\Program Files (x86)\DipTrace\models3d\Cap SMD\cap_0805.step</Path>
+<Var>C:\Program Files (x86)\DipTrace\models3d\Cap SMD\cap_0805.step</Var>
+</Filename>
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="-0.01" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern Id="3" Mounting="Through" Width="15.8" Height="3" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>PinHeader_1x06_P2.54mm</Name>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT5" DefStyle="N" X="-6.35" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT6" DefStyle="N" X="-3.81" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+<Pad Id="3" Style="PadT6" DefStyle="N" X="-1.27" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+</Pad>
+<Pad Id="4" Style="PadT6" DefStyle="N" X="1.27" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>4</Number>
+</Pad>
+<Pad Id="5" Style="PadT6" DefStyle="N" X="3.81" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>5</Number>
+</Pad>
+<Pad Id="6" Style="PadT6" DefStyle="N" X="6.35" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>6</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-7.62" Y="-1.27" />
+<Point X="7.62" Y="1.27" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-7.9" Y="-1.5" />
+<Point X="7.9" Y="1.5" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern Id="4" Mounting="SMD" Width="3.3" Height="2.5" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</Name>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT7" DefStyle="N" X="-0.65" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT7" DefStyle="N" X="0.65" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.4" Y="-1" />
+<Point X="1.4" Y="1" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.65" Y="-1.25" />
+<Point X="1.65" Y="1.25" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern Id="5" Mounting="SMD" Width="3.18" Height="1.82" Orientation="0" LockTypeChange="Y" Type="IPC-7351" Float1="0" Float2="0" Float3="0" Int1="1" Int2="0">
+<Name>RES_0805_N</Name>
+<Name_Unique>RES_0805_INCH</Name_Unique>
+<Category Index="0">
+<Name>Capacitors</Name>
+<CategoryTypes>
+<CategoryType>
+<Type Index="0">'Chip</Type>
+</CategoryType>
+</CategoryTypes>
+</Category>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<RecoveryCode Generator="Y" Model="Y">[Y;Chip;1;N;Y;1;0;0;Y;Y;N;N;101;Default;|10;;;0.65;;;1.85;2;2.15;0.15;-0.15;1.1;1.25;1.4;0.15;-0.15;0.15;0.4;0.65;0.25;-0.25;;;;;;0.81;0.98;1.42;0.98|0;|;;;;;;;;;0.5;0.5;0.5|||||;;;1|||||||||4934475;15461355;16119285;Y]</RecoveryCode>
+<AddFields>
+<AddField Type="Text">
+<Name>Case Info</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Polaring</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>3d Model</Name>
+<Text/>
+</AddField>
+<AddField Type="Link">
+<Name>Comp Datasheet</Name>
+<Text/>
+</AddField>
+<AddField Type="Link">
+<Name>Old Patt Datasheet</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>History</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Old Lib Name</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Old Pattern Name</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 1</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 2</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 3</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 4</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 5</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 6</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 7</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 8</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 9</Name>
+<Text/>
+</AddField>
+<AddField Type="Text">
+<Name>Library 10</Name>
+<Text/>
+</AddField>
+</AddFields>
+<DefPad Style="PadT8" />
+<Pads>
+<Pad Id="1" Style="PadT8" DefStyle="Y" X="-0.895" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT8" DefStyle="Y" X="0.895" Y="0" Angle="3.14159" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Outline" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1" Y="0.625" />
+<Point X="1" Y="-0.625" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.23" Y="0.7" />
+<Point X="0.23" Y="0.7" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.23" Y="-0.7" />
+<Point X="0.23" Y="-0.7" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.08" Y="0.7" />
+<Point X="1.08" Y="-0.7" />
+</Points>
+</Shape>
+<Shape Id="5" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1.59" Y="0.91" />
+<Point X="1.59" Y="-0.91" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="0.65" AutoColor="4934475" Type="IPC-7351" KeepPins="N">
+<Filename>
+<Path>C:\Program Files (x86)\DipTrace\models3d\Resistors\res_0805.step</Path>
+<Var>C:\Program Files (x86)\DipTrace\models3d\Resistors\res_0805.step</Var>
+</Filename>
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="-0.01" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern Id="6" Mounting="SMD" Width="7.4" Height="5.4" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>SOIC-8_3.9x4.9mm_P1.27mm</Name>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT9" DefStyle="N" X="-2.475" Y="1.905" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT9" DefStyle="N" X="-2.475" Y="0.635" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+<Pad Id="3" Style="PadT9" DefStyle="N" X="-2.475" Y="-0.635" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+</Pad>
+<Pad Id="4" Style="PadT9" DefStyle="N" X="-2.475" Y="-1.905" Angle="0" Locked="N" Side="Top">
+<Number>4</Number>
+</Pad>
+<Pad Id="5" Style="PadT9" DefStyle="N" X="2.475" Y="-1.905" Angle="0" Locked="N" Side="Top">
+<Number>5</Number>
+</Pad>
+<Pad Id="6" Style="PadT9" DefStyle="N" X="2.475" Y="-0.635" Angle="0" Locked="N" Side="Top">
+<Number>6</Number>
+</Pad>
+<Pad Id="7" Style="PadT9" DefStyle="N" X="2.475" Y="0.635" Angle="0" Locked="N" Side="Top">
+<Number>7</Number>
+</Pad>
+<Pad Id="8" Style="PadT9" DefStyle="N" X="2.475" Y="1.905" Angle="0" Locked="N" Side="Top">
+<Number>8</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.95" Y="2.56" />
+<Point X="1.95" Y="2.56" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.95" Y="-2.56" />
+<Point X="1.95" Y="-2.56" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-3.45" Y="2.56" />
+<Point X="-1.95" Y="2.56" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.95" Y="-2.45" />
+<Point X="1.95" Y="2.45" />
+</Points>
+</Shape>
+<Shape Id="5" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-3.7" Y="-2.7" />
+<Point X="3.7" Y="2.7" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+</Patterns>
+</Library>

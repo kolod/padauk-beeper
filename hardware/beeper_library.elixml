@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library Type="DipTrace-ComponentLibrary" Name="Beeper" Hint="Padauk beeper parts" Version="4.3.0.3" Units="mm" UID32="1587266401">
+ <Library Type="DipTrace-PatternLibrary" Name="Beeper" Hint="Padauk beeper footprints" Version="4.3.0.1" Units="mm">
+  <PadStyles>
+   <PadStyle Name="SOIC_1.95x0.6" Type="Surface">
+    <MainStack Shape="Rectangle" Width="1.95" Height="0.6" XOff="0" YOff="0" Corner="25" />
+   </PadStyle>
+   <PadStyle Name="JUMPER_1.0x1.5" Type="Surface">
+    <MainStack Shape="Rectangle" Width="1" Height="1.5" XOff="0" YOff="0" />
+    <MaskPaste TopMask="Open" BotMask="Open" TopPaste="No Solder" BotPaste="No Solder" />
+   </PadStyle>
+   <PadStyle Name="BAT_1.27x5.08" Type="Surface">
+    <MainStack Shape="Rectangle" Width="1.27" Height="5.08" XOff="0" YOff="0" />
+   </PadStyle>
+   <PadStyle Name="BAT_NEG_D17.8" Type="Surface">
+    <MainStack Shape="Ellipse" Width="17.8" Height="17.8" XOff="0" YOff="0" />
+    <MaskPaste TopMask="Open" BotMask="Open" TopPaste="No Solder" BotPaste="No Solder" />
+   </PadStyle>
+   <PadStyle Name="BUZ_1.2x4.0" Type="Surface">
+    <MainStack Shape="Rectangle" Width="1.2" Height="4" XOff="0" YOff="0" />
+   </PadStyle>
+   <PadStyle Name="TH_1.7_SQ" Type="Through" HoleType="Round" Hole="1">
+    <MainStack Shape="Rectangle" Width="1.7" Height="1.7" XOff="0" YOff="0" />
+   </PadStyle>
+   <PadStyle Name="TH_1.7" Type="Through" HoleType="Round" Hole="1">
+    <MainStack Shape="Ellipse" Width="1.7" Height="1.7" XOff="0" YOff="0" />
+   </PadStyle>
+  </PadStyles>
+  <Patterns>
+   <Pattern Id="0" PatternStyle="PatType0" RefDes="U" Mounting="SMD" Width="7.4" Height="5.4" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+    <Name>SOIC-8_3.9x4.9mm_P1.27mm</Name>
+    <Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+    <Pads>
+     <Pad Id="1" Style="SOIC_1.95x0.6" X="-2.475" Y="1.905" Angle="0" Locked="N" Side="Top">
+      <Number>1</Number>
+     </Pad>
+     <Pad Id="2" Style="SOIC_1.95x0.6" X="-2.475" Y="0.635" Angle="0" Locked="N" Side="Top">
+      <Number>2</Number>
+     </Pad>
+     <Pad Id="3" Style="SOIC_1.95x0.6" X="-2.475" Y="-0.635" Angle="0" Locked="N" Side="Top">
+      <Number>3</Number>
+     </Pad>
+     <Pad Id="4" Style="SOIC_1.95x0.6" X="-2.475" Y="-1.905" Angle="0" Locked="N" Side="Top">
+      <Number>4</Number>
+     </Pad>
+     <Pad Id="5" Style="SOIC_1.95x0.6" X="2.475" Y="-1.905" Angle="0" Locked="N" Side="Top">
+      <Number>5</Number>
+     </Pad>
+     <Pad Id="6" Style="SOIC_1.95x0.6" X="2.475" Y="-0.635" Angle="0" Locked="N" Side="Top">
+      <Number>6</Number>
+     </Pad>
+     <Pad Id="7" Style="SOIC_1.95x0.6" X="2.475" Y="0.635" Angle="0" Locked="N" Side="Top">
+      <Number>7</Number>
+     </Pad>
+     <Pad Id="8" Style="SOIC_1.95x0.6" X="2.475" Y="1.905" Angle="0" Locked="N" Side="Top">
+      <Number>8</Number>
+     </Pad>
+    </Pads>
+    <Shapes>
+     <Shape Id="0" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-1.95" Y="2.56" />
+       <Point X="1.95" Y="2.56" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-1.95" Y="-2.56" />
+       <Point X="1.95" Y="-2.56" />
+      </Points>
+     </Shape>
+     <Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-3.45" Y="2.56" />
+       <Point X="-1.95" Y="2.56" />
+      </Points>
+     </Shape>
+     <Shape Id="3" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12">
+      <Points>
+       <Point X="-1.95" Y="-2.45" />
+       <Point X="1.95" Y="2.45" />
+      </Points>
+     </Shape>
+     <Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12">
+      <Points>
+       <Point X="-3.7" Y="-2.7" />
+       <Point X="3.7" Y="2.7" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Pattern>
+   <Pattern Id="1" PatternStyle="PatType1" RefDes="JP" Mounting="SMD" Width="3.3" Height="2.5" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+    <Name>SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</Name>
+    <Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+    <Pads>
+     <Pad Id="1" Style="JUMPER_1.0x1.5" X="-0.65" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>1</Number>
+     </Pad>
+     <Pad Id="2" Style="JUMPER_1.0x1.5" X="0.65" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>2</Number>
+     </Pad>
+    </Pads>
+    <Shapes>
+     <Shape Id="0" Type="Rectangle" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-1.4" Y="-1" />
+       <Point X="1.4" Y="1" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12">
+      <Points>
+       <Point X="-1.65" Y="-1.25" />
+       <Point X="1.65" Y="1.25" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Pattern>
+   <Pattern Id="2" PatternStyle="PatType2" RefDes="BT" Mounting="SMD" Width="23.74" Height="20" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+    <Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+    <Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+    <Pads>
+     <Pad Id="1" Style="BAT_1.27x5.08" X="-10.985" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>1</Number>
+     </Pad>
+     <Pad Id="2" Style="BAT_1.27x5.08" X="10.985" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>2</Number>
+     </Pad>
+     <Pad Id="3" Style="BAT_NEG_D17.8" X="0" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>3</Number>
+     </Pad>
+    </Pads>
+    <Shapes>
+     <Shape Id="0" Type="Obround" Locked="N" Layer="Top Assy" LineWidth="0.12">
+      <Points>
+       <Point X="-10" Y="-10" />
+       <Point X="10" Y="10" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Polygon" Locked="N" Layer="Top Courtyard" LineWidth="0.12">
+      <Points>
+       <Point X="-11.87" Y="-2.79" />
+       <Point X="-11.87" Y="2.79" />
+       <Point X="-10.88" Y="2.79" />
+       <Point X="-10.88" Y="3.64" />
+       <Point X="-9.44" Y="7.62" />
+       <Point X="9.43" Y="7.63" />
+       <Point X="10.88" Y="3.64" />
+       <Point X="10.88" Y="2.79" />
+       <Point X="11.87" Y="2.79" />
+       <Point X="11.87" Y="-2.79" />
+       <Point X="10.88" Y="-2.79" />
+       <Point X="10.88" Y="-5.5" />
+       <Point X="8.74" Y="-7.64" />
+       <Point X="-8.74" Y="-7.64" />
+       <Point X="-10.88" Y="-5.5" />
+       <Point X="-10.88" Y="-2.79" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Pattern>
+   <Pattern Id="3" PatternStyle="PatType3" RefDes="BZ" Mounting="SMD" Width="12.9" Height="12.7" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+    <Name>Buzzer_Murata_PKLCS1212E</Name>
+    <Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+    <Pads>
+     <Pad Id="1" Style="BUZ_1.2x4.0" X="-5.6" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>1</Number>
+     </Pad>
+     <Pad Id="2" Style="BUZ_1.2x4.0" X="5.6" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>2</Number>
+     </Pad>
+    </Pads>
+    <Shapes>
+     <Shape Id="0" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-6.35" Y="2.6" />
+       <Point X="-6.35" Y="6.35" />
+       <Point X="6.35" Y="6.35" />
+       <Point X="6.35" Y="2.6" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-6.35" Y="-2.6" />
+       <Point X="-6.35" Y="-6.35" />
+       <Point X="6.35" Y="-6.35" />
+       <Point X="6.35" Y="-2.6" />
+      </Points>
+     </Shape>
+     <Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12">
+      <Points>
+       <Point X="-6" Y="-6" />
+       <Point X="6" Y="6" />
+      </Points>
+     </Shape>
+     <Shape Id="3" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12">
+      <Points>
+       <Point X="-6.45" Y="-6.25" />
+       <Point X="6.45" Y="6.25" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Pattern>
+   <Pattern Id="4" PatternStyle="PatType4" RefDes="J" Mounting="Through" Width="15.8" Height="3" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+    <Name>PinHeader_1x06_P2.54mm</Name>
+    <Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+    <Pads>
+     <Pad Id="1" Style="TH_1.7_SQ" X="-6.35" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>1</Number>
+     </Pad>
+     <Pad Id="2" Style="TH_1.7" X="-3.81" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>2</Number>
+     </Pad>
+     <Pad Id="3" Style="TH_1.7" X="-1.27" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>3</Number>
+     </Pad>
+     <Pad Id="4" Style="TH_1.7" X="1.27" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>4</Number>
+     </Pad>
+     <Pad Id="5" Style="TH_1.7" X="3.81" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>5</Number>
+     </Pad>
+     <Pad Id="6" Style="TH_1.7" X="6.35" Y="0" Angle="0" Locked="N" Side="Top">
+      <Number>6</Number>
+     </Pad>
+    </Pads>
+    <Shapes>
+     <Shape Id="0" Type="Rectangle" Locked="N" Layer="Top Silk" LineWidth="0.12">
+      <Points>
+       <Point X="-7.62" Y="-1.27" />
+       <Point X="7.62" Y="1.27" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12">
+      <Points>
+       <Point X="-7.9" Y="-1.5" />
+       <Point X="7.9" Y="1.5" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Pattern>
+  </Patterns>
+ </Library>
+ <Components>
+  <Component Id="0" ComponentStyle="CompType0">
+   <Part Id="0" RefDes="U" PartType="Normal" ShowNumbers="Common" Type="Free" Int1="0" Int2="0" Width="25.4" Height="15.24" LockTypeChange="N" SubFolderIndex="0">
+    <Pattern Style="PatType0" />
+    <Name>PFS154-S08</Name>
+    <PartName>Part 1</PartName>
+    <Value>PFS154-S08</Value>
+    <Origin X="0" Y="0" />
+    <Pins>
+     <Pin Id="0" X="-7.62" Y="3.81" Locked="N" Type="Default" ElectricType="Power" Orientation="0" PadId="1" Length="5.08" ShowName="Y">
+      <Name>VDD</Name>
+      <PadNumber>1</PadNumber>
+     </Pin>
+     <Pin Id="1" X="7.62" Y="3.81" Locked="N" Type="Default" ElectricType="Power" Orientation="180" PadId="8" Length="5.08" ShowName="Y">
+      <Name>GND</Name>
+      <PadNumber>8</PadNumber>
+     </Pin>
+     <Pin Id="2" X="7.62" Y="-3.81" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="180" PadId="5" Length="5.08" ShowName="Y">
+      <Name>PA3</Name>
+      <PadNumber>5</PadNumber>
+     </Pin>
+     <Pin Id="3" X="7.62" Y="-1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="180" PadId="6" Length="5.08" ShowName="Y">
+      <Name>PA4</Name>
+      <PadNumber>6</PadNumber>
+     </Pin>
+     <Pin Id="4" X="-7.62" Y="-3.81" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="0" PadId="4" Length="5.08" ShowName="Y">
+      <Name>PA5</Name>
+      <PadNumber>4</PadNumber>
+     </Pin>
+     <Pin Id="5" X="-7.62" Y="-1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="0" PadId="3" Length="5.08" ShowName="Y">
+      <Name>PA6</Name>
+      <PadNumber>3</PadNumber>
+     </Pin>
+     <Pin Id="6" X="-7.62" Y="1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="0" PadId="2" Length="5.08" ShowName="Y">
+      <Name>PA7</Name>
+      <PadNumber>2</PadNumber>
+     </Pin>
+     <Pin Id="7" X="7.62" Y="1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="180" PadId="7" Length="5.08" ShowName="Y">
+      <Name>PA0</Name>
+      <PadNumber>7</PadNumber>
+     </Pin>
+    </Pins>
+    <Shapes>
+     <Shape Id="0" Type="Rectangle" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="-7.62" Y="-7.62" />
+       <Point X="7.62" Y="7.62" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Part>
+  </Component>
+  <Component Id="1" ComponentStyle="CompType1">
+   <Part Id="0" RefDes="JP" PartType="Normal" ShowNumbers="Common" Type="Free" Int1="0" Int2="0" Width="2.54" Height="10.16" LockTypeChange="N" SubFolderIndex="0">
+    <Pattern Style="PatType1" />
+    <Name>SolderJumper_Open</Name>
+    <PartName>Part 1</PartName>
+    <Value>Open</Value>
+    <Origin X="0" Y="0" />
+    <Pins>
+     <Pin Id="0" X="0" Y="1.9" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="3.18" ShowName="N">
+      <Name>1</Name>
+      <PadNumber>1</PadNumber>
+     </Pin>
+     <Pin Id="1" X="0" Y="-1.9" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="3.18" ShowName="N">
+      <Name>2</Name>
+      <PadNumber>2</PadNumber>
+     </Pin>
+    </Pins>
+    <Shapes>
+     <Shape Id="0" Type="FillRect" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="-1.27" Y="0.38" />
+       <Point X="1.27" Y="1.9" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="FillRect" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="-1.27" Y="-1.9" />
+       <Point X="1.27" Y="-0.38" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Part>
+  </Component>
+  <Component Id="2" ComponentStyle="CompType2">
+   <Part Id="0" RefDes="BZ" PartType="Normal" ShowNumbers="Common" Type="Free" Int1="0" Int2="0" Width="5.08" Height="10.16" LockTypeChange="N" SubFolderIndex="0">
+    <Pattern Style="PatType3" />
+    <Name>PKLCS1212E4001-R1</Name>
+    <PartName>Part 1</PartName>
+    <Value>PKLCS1212E4001</Value>
+    <Origin X="0" Y="0" />
+    <Pins>
+     <Pin Id="0" X="0" Y="2.54" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="2.54" ShowName="N">
+      <Name>1</Name>
+      <PadNumber>1</PadNumber>
+     </Pin>
+     <Pin Id="1" X="0" Y="-2.54" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="2.54" ShowName="N">
+      <Name>2</Name>
+      <PadNumber>2</PadNumber>
+     </Pin>
+    </Pins>
+    <Shapes>
+     <Shape Id="0" Type="Rectangle" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="-2.54" Y="-2.54" />
+       <Point X="2.54" Y="2.54" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Text" Locked="N" FontVector="Y" FontSize="5" FontWidth="-2" FontScale="1" TextShow="Any Text" HorzAlign="Center" VertAlign="Center" TextAlign="Center" Angle="0">
+      <TextLines>
+       <TextLine>BZ</TextLine>
+      </TextLines>
+      <Points>
+       <Point X="0" Y="0" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Part>
+  </Component>
+  <Component Id="3" ComponentStyle="CompType3">
+   <Part Id="0" RefDes="BT" PartType="Normal" ShowNumbers="Common" Type="Free" Int1="0" Int2="0" Width="5.08" Height="10.16" LockTypeChange="N" SubFolderIndex="0">
+    <Pattern Style="PatType2" />
+    <Name>Keystone 3034 (CR2032)</Name>
+    <PartName>Part 1</PartName>
+    <Value>CR2032</Value>
+    <Origin X="0" Y="0" />
+    <Pins>
+     <Pin Id="0" X="-2.54" Y="0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="4.445" ShowName="N">
+      <Name>+</Name>
+      <PadNumber>1</PadNumber>
+     </Pin>
+     <Pin Id="1" X="2.54" Y="0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="2" Length="4.445" ShowName="N">
+      <Name>+</Name>
+      <PadNumber>2</PadNumber>
+     </Pin>
+     <Pin Id="2" X="0" Y="-0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="3" Length="4.445" ShowName="N">
+      <Name>-</Name>
+      <PadNumber>3</PadNumber>
+     </Pin>
+    </Pins>
+    <Shapes>
+     <Shape Id="0" Type="Line" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="-2.54" Y="0.635" />
+       <Point X="2.54" Y="0.635" />
+      </Points>
+     </Shape>
+     <Shape Id="1" Type="Line" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="-1.27" Y="-0.635" />
+       <Point X="1.27" Y="-0.635" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Part>
+  </Component>
+  <Component Id="4" ComponentStyle="CompType4">
+   <Part Id="0" RefDes="J" PartType="Normal" ShowNumbers="Common" Type="Free" Int1="0" Int2="0" Width="10.16" Height="17.78" LockTypeChange="N" SubFolderIndex="0">
+    <Pattern Style="PatType4" />
+    <Name>PinHeader_1x06 (programming)</Name>
+    <PartName>Part 1</PartName>
+    <Value>PDK ICP</Value>
+    <Origin X="0" Y="0" />
+    <Pins>
+     <Pin Id="0" X="0" Y="6.35" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="1" Length="5.08" ShowName="Y">
+      <Name>VDD</Name>
+      <PadNumber>1</PadNumber>
+     </Pin>
+     <Pin Id="1" X="0" Y="3.81" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="2" Length="5.08" ShowName="Y">
+      <Name>PA3</Name>
+      <PadNumber>2</PadNumber>
+     </Pin>
+     <Pin Id="2" X="0" Y="1.27" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="3" Length="5.08" ShowName="Y">
+      <Name>PA4</Name>
+      <PadNumber>3</PadNumber>
+     </Pin>
+     <Pin Id="3" X="0" Y="-1.27" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="4" Length="5.08" ShowName="Y">
+      <Name>PA5</Name>
+      <PadNumber>4</PadNumber>
+     </Pin>
+     <Pin Id="4" X="0" Y="-3.81" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="5" Length="5.08" ShowName="Y">
+      <Name>PA6</Name>
+      <PadNumber>5</PadNumber>
+     </Pin>
+     <Pin Id="5" X="0" Y="-6.35" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="6" Length="5.08" ShowName="Y">
+      <Name>GND</Name>
+      <PadNumber>6</PadNumber>
+     </Pin>
+    </Pins>
+    <Shapes>
+     <Shape Id="0" Type="Rectangle" Locked="N" LineWidth="0.25">
+      <Points>
+       <Point X="0" Y="-8.89" />
+       <Point X="5.08" Y="8.89" />
+      </Points>
+     </Shape>
+    </Shapes>
+   </Part>
+  </Component>
+ </Components>
+</Library>

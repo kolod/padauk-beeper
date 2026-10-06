@@ -1,0 +1,2512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Source Type="DipTrace-PCB" Version="5.3.5.1" Units="mm">
+<Library Type="DipTrace-ComponentLibrary" Version="5.3.5.1" Units="mm">
+<Library Type="DipTrace-PatternLibrary" Version="5.3.5.1" Units="mm">
+<PadStyles>
+<PadStyle Name="PadT0" Type="Through" HoleType="Round" Hole="0">
+<MainStack Shape="Ellipse" Width="0" Height="0" XOff="0" YOff="0" />
+<MaskPaste CustomSwell="0" CustomShrink="0" />
+</PadStyle>
+<PadStyle Name="PadT1" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.27" Height="5.08" Corner="0" />
+</PadStyle>
+<PadStyle Name="PadT2" Type="Surface">
+<MainStack Shape="Ellipse" Width="17.8" Height="17.8" />
+<MaskPaste TopMask="Open" BotMask="Open" TopPaste="No Solder" BotPaste="No Solder" />
+</PadStyle>
+<PadStyle Name="PadT3" Type="Through" HoleType="Round" Hole="0.16667">
+<MainStack Shape="Ellipse" Width="-0.33333" Height="-0.33333" XOff="0" YOff="0" />
+</PadStyle>
+<PadStyle Name="PadT4" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.2" Height="4" Corner="0" />
+</PadStyle>
+<PadStyle Name="PadT5" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.11" Height="1.47" Corner="22.5225" />
+<Terminals>
+<Terminal Shape="Rectangle" X="0.1" Y="0" Angle="0" Width="0.5" Height="1.25" Corner="0" />
+</Terminals>
+</PadStyle>
+<PadStyle Name="PadT6" Type="Through" HoleType="Round" Hole="1">
+<MainStack Shape="Rectangle" Width="1.7" Height="1.7" XOff="0" YOff="0" Corner="0" />
+</PadStyle>
+<PadStyle Name="PadT7" Type="Through" HoleType="Round" Hole="1">
+<MainStack Shape="Ellipse" Width="1.7" Height="1.7" XOff="0" YOff="0" />
+</PadStyle>
+<PadStyle Name="PadT8" Type="Surface">
+<MainStack Shape="Rectangle" Width="1" Height="1.5" Corner="0" />
+<MaskPaste TopMask="Open" BotMask="Open" TopPaste="No Solder" BotPaste="No Solder" />
+</PadStyle>
+<PadStyle Name="PadT9" Type="Surface">
+<MainStack Shape="Rectangle" Width="0.98" Height="1.42" Corner="25.5102" />
+<Terminals>
+<Terminal Shape="Rectangle" X="0.095" Y="0" Angle="0" Width="0.4" Height="1.25" Corner="0" />
+</Terminals>
+</PadStyle>
+<PadStyle Name="PadT10" Type="Surface">
+<MainStack Shape="Rectangle" Width="1.95" Height="0.6" Corner="25" />
+</PadStyle>
+<PadStyle Name="PadT11" Type="Surface">
+<MainStack Shape="Rectangle" Width="0.9" Height="0.95" Corner="25" />
+</PadStyle>
+<PadStyle Name="PadT12" Type="Surface">
+<MainStack Shape="Rectangle" Width="1" Height="1.45" Corner="25" />
+</PadStyle>
+</PadStyles>
+<Patterns>
+<Pattern PatternStyle="PatType0" Id="0" RefDes="BT" Mounting="SMD" Width="23.74" Height="20" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+<Value>CR2032</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT1" DefStyle="N" X="10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT1" DefStyle="N" X="-10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+<Pad Id="3" Style="PadT2" DefStyle="N" X="0" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Obround" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="10" Y="10" />
+<Point X="-10" Y="-10" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polygon" Locked="N" Layer="Top Courtyard" AllLayers="N">
+<Points>
+<Point X="11.87" Y="-2.79" />
+<Point X="11.87" Y="2.79" />
+<Point X="10.88" Y="2.79" />
+<Point X="10.88" Y="3.64" />
+<Point X="9.44" Y="7.62" />
+<Point X="-9.43" Y="7.63" />
+<Point X="-10.88" Y="3.64" />
+<Point X="-10.88" Y="2.79" />
+<Point X="-11.87" Y="2.79" />
+<Point X="-11.87" Y="-2.79" />
+<Point X="-10.88" Y="-2.79" />
+<Point X="-10.88" Y="-5.5" />
+<Point X="-8.74" Y="-7.64" />
+<Point X="8.74" Y="-7.64" />
+<Point X="10.88" Y="-5.5" />
+<Point X="10.88" Y="-2.79" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Filename>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\3d_models\Keystone 3034.STEP</Path>
+<Var>%projectdir%\3d_models\Keystone 3034.STEP</Var>
+</Filename>
+<Rotate X="90" Y="0" Z="-180" />
+<Offset X="0" Y="7.4" Z="-3.85" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType1" Id="1" RefDes="BZ" Mounting="SMD" Width="12.9" Height="12.7" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>Buzzer_Murata_PKLCS1212E</Name>
+<Value>PKLCS1212E4001</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT3" />
+<Pads>
+<Pad Id="1" Style="PadT4" DefStyle="N" X="-5.6" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT4" DefStyle="N" X="5.6" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.35" Y="2.6" />
+<Point X="-6.35" Y="6.35" />
+<Point X="6.35" Y="6.35" />
+<Point X="6.35" Y="2.6" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.35" Y="-2.6" />
+<Point X="-6.35" Y="-6.35" />
+<Point X="6.35" Y="-6.35" />
+<Point X="6.35" Y="-2.6" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6" Y="-6" />
+<Point X="6" Y="6" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.45" Y="-6.25" />
+<Point X="6.45" Y="6.25" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType2" Id="2" RefDes="C" Mounting="SMD" Width="3.22" Height="1.88" Orientation="0" LockTypeChange="Y" Type="IPC-7351" Float1="0" Float2="0" Float3="0" Int1="1" Int2="0">
+<Name>CAP_0805_N</Name>
+<Name_Unique>CAP_0805_INCH</Name_Unique>
+<Value>100nF</Value>
+<Category Index="27">
+<Name>Capacitors</Name>
+<CategoryTypes>
+<CategoryType>
+<Type Index="6">'Chip</Type>
+</CategoryType>
+</CategoryTypes>
+</Category>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<RecoveryCode Generator="Y" Model="Y">[Y;Chip;1;N;Y;1;0;0;Y;Y;N;N;101;Default;|1;;;1.1;;;1.8;2;2.2;0.2;-0.2;1.05;1.25;1.45;0.2;-0.2;0.25;0.5;0.75;0.25;-0.25;;;;;;0.59;1.11;1.47;1.11|0;|;;;;;;;;;0.5;0.5;0.5|||||;;;1|||||||||12648447;15461355;16119285;Y]</RecoveryCode>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>CAP_0805_INCH</Text>
+</AddField>
+</AddFields>
+<DefPad Style="PadT5" />
+<Pads>
+<Pad Id="1" Style="PadT5" DefStyle="Y" X="-0.85" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>2</Note>
+</Pad>
+<Pad Id="2" Style="PadT5" DefStyle="Y" X="0.85" Y="0" Angle="3.14159" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>1</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Outline" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1" Y="0.625" />
+<Point X="1" Y="-0.625" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.12" Y="0.73" />
+<Point X="0.12" Y="0.73" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.12" Y="-0.73" />
+<Point X="0.12" Y="-0.73" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.1" Y="0.73" />
+<Point X="1.1" Y="-0.73" />
+</Points>
+</Shape>
+<Shape Id="5" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1.61" Y="0.94" />
+<Point X="1.61" Y="-0.94" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="1.1" AutoColor="4934475" Type="IPC-7351" KeepPins="N">
+<Filename>
+<Path>C:\Program Files (x86)\DipTrace\models3d\Cap SMD\cap_0805.step</Path>
+<Var>C:\Program Files (x86)\DipTrace\models3d\Cap SMD\cap_0805.step</Var>
+</Filename>
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="-0.01" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType3" Id="3" RefDes="J" Mounting="Through" Width="15.8" Height="3" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>PinHeader_1x06_P2.54mm</Name>
+<Value>PDK ICP</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT6" DefStyle="N" X="-6.35" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>VDD</Note>
+</Pad>
+<Pad Id="2" Style="PadT7" DefStyle="N" X="-3.81" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>PA3</Note>
+</Pad>
+<Pad Id="3" Style="PadT7" DefStyle="N" X="-1.27" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+<Note>PA4</Note>
+</Pad>
+<Pad Id="4" Style="PadT7" DefStyle="N" X="1.27" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>4</Number>
+<Note>PA5</Note>
+</Pad>
+<Pad Id="5" Style="PadT7" DefStyle="N" X="3.81" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>5</Number>
+<Note>PA6</Note>
+</Pad>
+<Pad Id="6" Style="PadT7" DefStyle="N" X="6.35" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>6</Number>
+<Note>GND</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-7.62" Y="-1.27" />
+<Point X="7.62" Y="1.27" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-7.9" Y="-1.5" />
+<Point X="7.9" Y="1.5" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType4" Id="4" RefDes="JP" Mounting="SMD" Width="3.3" Height="2.5" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</Name>
+<Value>SEL0</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT8" DefStyle="N" X="-0.65" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>1</Note>
+</Pad>
+<Pad Id="2" Style="PadT8" DefStyle="N" X="0.65" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>2</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.4" Y="-1" />
+<Point X="1.4" Y="1" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.65" Y="-1.25" />
+<Point X="1.65" Y="1.25" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType5" Id="5" RefDes="R" Mounting="SMD" Width="3.18" Height="1.82" Orientation="0" LockTypeChange="Y" Type="IPC-7351" Float1="0" Float2="0" Float3="0" Int1="1" Int2="0">
+<Name>RES_0805_N</Name>
+<Name_Unique>RES_0805_INCH</Name_Unique>
+<Value>330</Value>
+<Category Index="27">
+<Name>Capacitors</Name>
+<CategoryTypes>
+<CategoryType>
+<Type Index="6">'Chip</Type>
+</CategoryType>
+</CategoryTypes>
+</Category>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<RecoveryCode Generator="Y" Model="Y">[Y;Chip;1;N;Y;1;0;0;Y;Y;N;N;101;Default;|10;;;0.65;;;1.85;2;2.15;0.15;-0.15;1.1;1.25;1.4;0.15;-0.15;0.15;0.4;0.65;0.25;-0.25;;;;;;0.81;0.98;1.42;0.98|0;|;;;;;;;;;0.5;0.5;0.5|||||;;;1|||||||||4934475;15461355;16119285;Y]</RecoveryCode>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>RES_0805_INCH</Text>
+</AddField>
+</AddFields>
+<DefPad Style="PadT9" />
+<Pads>
+<Pad Id="1" Style="PadT9" DefStyle="Y" X="-0.895" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>1</Note>
+</Pad>
+<Pad Id="2" Style="PadT9" DefStyle="Y" X="0.895" Y="0" Angle="3.14159" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>2</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Outline" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1" Y="0.625" />
+<Point X="1" Y="-0.625" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.23" Y="0.7" />
+<Point X="0.23" Y="0.7" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.23" Y="-0.7" />
+<Point X="0.23" Y="-0.7" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.08" Y="0.7" />
+<Point X="1.08" Y="-0.7" />
+</Points>
+</Shape>
+<Shape Id="5" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.05" AllLayers="N">
+<Points>
+<Point X="-1.59" Y="0.91" />
+<Point X="1.59" Y="-0.91" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="0.65" AutoColor="4934475" Type="IPC-7351" KeepPins="N">
+<Filename>
+<Path>C:\Program Files (x86)\DipTrace\models3d\Resistors\res_0805.step</Path>
+<Var>C:\Program Files (x86)\DipTrace\models3d\Resistors\res_0805.step</Var>
+</Filename>
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="-0.01" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType6" Id="6" RefDes="U" Mounting="SMD" Width="7.4" Height="5.4" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>SOIC-8_3.9x4.9mm_P1.27mm</Name>
+<Value>PFS154-S08</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT10" DefStyle="N" X="-2.475" Y="1.905" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>VDD</Note>
+</Pad>
+<Pad Id="2" Style="PadT10" DefStyle="N" X="-2.475" Y="0.635" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>PA7</Note>
+</Pad>
+<Pad Id="3" Style="PadT10" DefStyle="N" X="-2.475" Y="-0.635" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+<Note>PA6</Note>
+</Pad>
+<Pad Id="4" Style="PadT10" DefStyle="N" X="-2.475" Y="-1.905" Angle="0" Locked="N" Side="Top">
+<Number>4</Number>
+<Note>PA5</Note>
+</Pad>
+<Pad Id="5" Style="PadT10" DefStyle="N" X="2.475" Y="-1.905" Angle="0" Locked="N" Side="Top">
+<Number>5</Number>
+<Note>PA3</Note>
+</Pad>
+<Pad Id="6" Style="PadT10" DefStyle="N" X="2.475" Y="-0.635" Angle="0" Locked="N" Side="Top">
+<Number>6</Number>
+<Note>PA4</Note>
+</Pad>
+<Pad Id="7" Style="PadT10" DefStyle="N" X="2.475" Y="0.635" Angle="0" Locked="N" Side="Top">
+<Number>7</Number>
+<Note>PA0</Note>
+</Pad>
+<Pad Id="8" Style="PadT10" DefStyle="N" X="2.475" Y="1.905" Angle="0" Locked="N" Side="Top">
+<Number>8</Number>
+<Note>GND</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.95" Y="2.56" />
+<Point X="1.95" Y="2.56" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.95" Y="-2.56" />
+<Point X="1.95" Y="-2.56" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-3.45" Y="2.56" />
+<Point X="-1.95" Y="2.56" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.95" Y="-2.45" />
+<Point X="1.95" Y="2.45" />
+</Points>
+</Shape>
+<Shape Id="5" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-3.7" Y="-2.7" />
+<Point X="3.7" Y="2.7" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType7" Id="7" Mounting="SMD" Width="23.74" Height="20" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT1" DefStyle="N" X="-10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+</Pad>
+<Pad Id="2" Style="PadT1" DefStyle="N" X="10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+</Pad>
+<Pad Id="3" Style="PadT2" DefStyle="N" X="0" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Obround" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-10" Y="-10" />
+<Point X="10" Y="10" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polygon" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-11.87" Y="-2.79" />
+<Point X="-11.87" Y="2.79" />
+<Point X="-10.88" Y="2.79" />
+<Point X="-10.88" Y="3.64" />
+<Point X="-9.44" Y="7.62" />
+<Point X="9.43" Y="7.63" />
+<Point X="10.88" Y="3.64" />
+<Point X="10.88" Y="2.79" />
+<Point X="11.87" Y="2.79" />
+<Point X="11.87" Y="-2.79" />
+<Point X="10.88" Y="-2.79" />
+<Point X="10.88" Y="-5.5" />
+<Point X="8.74" Y="-7.64" />
+<Point X="-8.74" Y="-7.64" />
+<Point X="-10.88" Y="-5.5" />
+<Point X="-10.88" Y="-2.79" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Filename>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\3d_models\Keystone 3034.STEP</Path>
+<Var>C:\Users\alexa\Projects\aram\beeper\soft\hardware\3d_models\Keystone 3034.STEP</Var>
+</Filename>
+<Rotate X="90" Y="0" Z="0" />
+<Offset X="0" Y="-7.4" Z="-3.85" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType8" Id="8" RefDes="NetPort" Mounting="Through" Width="0" Height="0" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Category Index="0" />
+<Origin X="0" Y="0" Cross="N" Circle="N" Common="Show" Courtyard="Show" />
+<DefPad Style="PadT3" />
+<Model3D Mirror="N" NoSearch="N" Units="mm" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="0" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="0" Y="0" Z="0" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType9" Id="9" RefDes="C" Mounting="SMD" Width="2.96" Height="1.46" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>C_0603_1608Metric</Name>
+<Value>100nF</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT11" DefStyle="N" X="-0.775" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>1</Note>
+</Pad>
+<Pad Id="2" Style="PadT11" DefStyle="N" X="0.775" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>2</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.8" Y="-0.4" />
+<Point X="0.8" Y="0.4" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.48" Y="-0.73" />
+<Point X="1.48" Y="0.73" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType10" Id="10" RefDes="C" Mounting="SMD" Width="3.36" Height="1.9" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>C_0805_2012Metric</Name>
+<Value>10uF</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT12" DefStyle="N" X="-0.95" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>1</Note>
+</Pad>
+<Pad Id="2" Style="PadT12" DefStyle="N" X="0.95" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>2</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1" Y="-0.625" />
+<Point X="1" Y="0.625" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.68" Y="-0.95" />
+<Point X="1.68" Y="0.95" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType11" Id="11" RefDes="R" Mounting="SMD" Width="2.96" Height="1.46" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>R_0603_1608Metric</Name>
+<Value>330</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT11" DefStyle="N" X="-0.775" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>1</Note>
+</Pad>
+<Pad Id="2" Style="PadT11" DefStyle="N" X="0.775" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>2</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-0.8" Y="-0.4" />
+<Point X="0.8" Y="0.4" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-1.48" Y="-0.73" />
+<Point X="1.48" Y="0.73" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType12" Id="12" RefDes="BZ" Mounting="SMD" Width="12.9" Height="12.7" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>Buzzer_Murata_PKLCS1212E</Name>
+<Value>PKLCS1212E4001</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT4" DefStyle="N" X="-5.6" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>1</Note>
+</Pad>
+<Pad Id="2" Style="PadT4" DefStyle="N" X="5.6" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>2</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.35" Y="2.6" />
+<Point X="-6.35" Y="6.35" />
+<Point X="6.35" Y="6.35" />
+<Point X="6.35" Y="2.6" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polyline" Locked="N" Layer="Top Silk" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.35" Y="-2.6" />
+<Point X="-6.35" Y="-6.35" />
+<Point X="6.35" Y="-6.35" />
+<Point X="6.35" Y="-2.6" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Rectangle" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6" Y="-6" />
+<Point X="6" Y="6" />
+</Points>
+</Shape>
+<Shape Id="4" Type="Rectangle" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-6.45" Y="-6.25" />
+<Point X="6.45" Y="6.25" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+<Pattern PatternStyle="PatType13" Id="13" RefDes="BT" Mounting="SMD" Width="23.74" Height="20" Orientation="0" LockTypeChange="N" Type="Free" Float1="0" Float2="0" Float3="0" Int1="0" Int2="0">
+<Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+<Value>CR2032</Value>
+<Origin X="0" Y="0" Cross="Y" Circle="Y" Common="Hide" Courtyard="Show" />
+<DefPad Style="PadT0" />
+<Pads>
+<Pad Id="1" Style="PadT1" DefStyle="N" X="-10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>1</Number>
+<Note>+</Note>
+</Pad>
+<Pad Id="2" Style="PadT1" DefStyle="N" X="10.985" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>2</Number>
+<Note>+</Note>
+</Pad>
+<Pad Id="3" Style="PadT2" DefStyle="N" X="0" Y="0" Angle="0" Locked="N" Side="Top">
+<Number>3</Number>
+<Note>-</Note>
+</Pad>
+</Pads>
+<Shapes>
+<Shape Id="1" Type="Obround" Locked="N" Layer="Top Assy" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-10" Y="-10" />
+<Point X="10" Y="10" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Polygon" Locked="N" Layer="Top Courtyard" LineWidth="0.12" AllLayers="N">
+<Points>
+<Point X="-11.87" Y="-2.79" />
+<Point X="-11.87" Y="2.79" />
+<Point X="-10.88" Y="2.79" />
+<Point X="-10.88" Y="3.64" />
+<Point X="-9.44" Y="7.62" />
+<Point X="9.43" Y="7.63" />
+<Point X="10.88" Y="3.64" />
+<Point X="10.88" Y="2.79" />
+<Point X="11.87" Y="2.79" />
+<Point X="11.87" Y="-2.79" />
+<Point X="10.88" Y="-2.79" />
+<Point X="10.88" Y="-5.5" />
+<Point X="8.74" Y="-7.64" />
+<Point X="-8.74" Y="-7.64" />
+<Point X="-10.88" Y="-5.5" />
+<Point X="-10.88" Y="-2.79" />
+</Points>
+</Shape>
+</Shapes>
+<Model3D Mirror="N" NoSearch="N" Units="Wings" IPC_XOff="0" IPC_YOff="0" AutoHeight="0" AutoColor="4934475" Type="File" KeepPins="N">
+<Rotate X="0" Y="0" Z="0" />
+<Offset X="0" Y="0" Z="0" />
+<Zoom X="1" Y="1" Z="1" />
+</Model3D>
+</Pattern>
+</Patterns>
+</Library>
+<Components>
+<Component Id="0">
+<Part Id="0" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="0" Height="0" LockTypeChange="N">
+<Pattern Style="PatType7" />
+<Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+<LibPath>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\beeper_patterns.libxml</Path>
+<Var>%projectdir%\beeper_patterns.libxml</Var>
+</LibPath>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Category Index="0" />
+<Pins />
+<Shapes />
+</Part>
+</Component>
+<Component Id="1">
+<Part Id="0" RefDes="C" PartType="Normal" ShowNumbers="Show" Type="Free" Int1="0" Int2="0" Width="3.81" Height="2.54" LockTypeChange="Y">
+<Pattern Style="PatType2" />
+<Name>CAP_0805_N</Name>
+<PartName>Part 1</PartName>
+<LibPath>
+<Path>C:\Users\alexa\Documents\DipTrace\My Libraries\Capacitors Chip Inch.eli</Path>
+<Var>C:\Users\alexa\Documents\DipTrace\My Libraries\Capacitors Chip Inch.eli</Var>
+</LibPath>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="0" Y="1.27" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="2" Length="3.81" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="0" Y="-1.27" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="1" Length="3.81" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-1.905" Y="0.3175" />
+<Point X="1.905" Y="0.3175" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-1.905" Y="-0.3175" />
+<Point X="1.905" Y="-0.3175" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="0" Y="-0.3178" />
+<Point X="0" Y="-1.27" />
+</Points>
+</Shape>
+<Shape Id="3" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="0" Y="1.27" />
+<Point X="0" Y="0.3172" />
+</Points>
+</Shape>
+</Shapes>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>CAP_0805_INCH</Text>
+</AddField>
+</AddFields>
+</Part>
+</Component>
+<Component Id="2">
+<Part Id="0" RefDes="R" PartType="Normal" ShowNumbers="Show" Type="Free" Int1="0" Int2="0" Width="7.62" Height="2.54" LockTypeChange="Y">
+<Pattern Style="PatType5" />
+<Name>RES_0805_N</Name>
+<PartName>Part 1</PartName>
+<LibPath>
+<Path>C:\Users\alexa\Documents\DipTrace\My Libraries\Resistors Chip Inch.eli</Path>
+<Var>C:\Users\alexa\Documents\DipTrace\My Libraries\Resistors Chip Inch.eli</Var>
+</LibPath>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="3.81" Y="0" Locked="N" Type="Default" ElectricType="Passive" Orientation="180" PadId="2" Length="3.81" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="-3.81" Y="0" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="1" Length="3.81" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Rectangle" LineWidth="0.25">
+<Points>
+<Point X="-3.81" Y="1.27" />
+<Point X="3.81" Y="-1.27" />
+</Points>
+</Shape>
+</Shapes>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>RES_0805_INCH</Text>
+</AddField>
+</AddFields>
+</Part>
+</Component>
+<Component Id="3">
+<Part Id="0" RefDes="NetPort" PartType="Net Port" ShowNumbers="Hide" Type="Free" Int1="0" Int2="0" Width="3.81" Height="2.032" LockTypeChange="Y">
+<Pattern Style="PatType8" />
+<Name>GND</Name>
+<PartName>Part 1</PartName>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Category Index="0">
+<Name>Symbols</Name>
+<CategoryTypes>
+<CategoryType>
+<Type Index="0">Net Ports</Type>
+</CategoryType>
+</CategoryTypes>
+</Category>
+<Pins>
+<Pin Id="0" X="0" Y="1.016" Locked="N" Type="Default" ElectricType="Power" Orientation="90" PadId="-1" Length="3.81" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>GND</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-1.905" Y="1.016" />
+<Point X="1.905" Y="1.016" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-1.27" Y="0" />
+<Point X="1.27" Y="0" />
+</Points>
+</Shape>
+<Shape Id="2" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-0.508" Y="-1.016" />
+<Point X="0.508" Y="-1.016" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="4">
+<Part Id="0" RefDes="NetPort" PartType="Net Port" ShowNumbers="Hide" Type="Free" Int1="0" Int2="0" Width="5.08" Height="1" LockTypeChange="Y">
+<Pattern Style="PatType8" />
+<Name>VDD</Name>
+<PartName>Part 1</PartName>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Category Index="0">
+<Name>Symbols</Name>
+<CategoryTypes>
+<CategoryType>
+<Type Index="0">Net Ports</Type>
+</CategoryType>
+</CategoryTypes>
+</Category>
+<Pins>
+<Pin Id="0" X="0" Y="0" Locked="N" Type="Default" ElectricType="Power" Orientation="270" PadId="-1" Length="3.81" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>VDD</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-2.54" Y="0" />
+<Point X="2.54" Y="0" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="5">
+<Part Id="0" RefDes="U" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="15.24" Height="15.24" LockTypeChange="N">
+<Pattern Style="PatType6" />
+<Name>PFS154-S08</Name>
+<PartName>Part 1</PartName>
+<Value>PFS154-S08</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="-7.62" Y="3.81" Locked="N" Type="Default" ElectricType="Power" Orientation="0" PadId="1" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>VDD</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="7.62" Y="3.81" Locked="N" Type="Default" ElectricType="Power" Orientation="180" PadId="8" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>GND</Name>
+<PadNumber>8</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="2" X="7.62" Y="-3.81" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="180" PadId="5" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA3</Name>
+<PadNumber>5</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="3" X="7.62" Y="-1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="180" PadId="6" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA4</Name>
+<PadNumber>6</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="4" X="-7.62" Y="-3.81" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="0" PadId="4" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA5</Name>
+<PadNumber>4</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="5" X="-7.62" Y="-1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="0" PadId="3" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA6</Name>
+<PadNumber>3</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="6" X="-7.62" Y="1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="0" PadId="2" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA7</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="7" X="7.62" Y="1.27" Locked="N" Type="Default" ElectricType="Bidirectional" Orientation="180" PadId="7" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA0</Name>
+<PadNumber>7</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Rectangle" LineWidth="0.25">
+<Points>
+<Point X="-7.62" Y="-7.62" />
+<Point X="7.62" Y="7.62" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="6">
+<Part Id="0" RefDes="C" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="5.01" Height="1.27" LockTypeChange="N">
+<Pattern Style="PatType9" />
+<Name>C_0603</Name>
+<PartName>Part 1</PartName>
+<Value>100nF</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="0" Y="0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="0" Y="-0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-2.505" Y="0.635" />
+<Point X="2.505" Y="0.635" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-2.505" Y="-0.635" />
+<Point X="2.505" Y="-0.635" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="7">
+<Part Id="0" RefDes="C" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="5.01" Height="1.27" LockTypeChange="N">
+<Pattern Style="PatType10" />
+<Name>C_0805</Name>
+<PartName>Part 1</PartName>
+<Value>10uF</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="0" Y="0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="0" Y="-0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-2.505" Y="0.635" />
+<Point X="2.505" Y="0.635" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-2.505" Y="-0.635" />
+<Point X="2.505" Y="-0.635" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="8">
+<Part Id="0" RefDes="R" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="1.8" Height="5.08" LockTypeChange="N">
+<Pattern Style="PatType11" />
+<Name>R_0603</Name>
+<PartName>Part 1</PartName>
+<Value>330</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="0" Y="2.54" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="2.54" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="0" Y="-2.54" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="2.54" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Rectangle" LineWidth="0.25">
+<Points>
+<Point X="-0.9" Y="-2.54" />
+<Point X="0.9" Y="2.54" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="9">
+<Part Id="0" RefDes="JP" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="2.54" Height="3.8" LockTypeChange="N">
+<Pattern Style="PatType4" />
+<Name>SolderJumper_Open</Name>
+<PartName>Part 1</PartName>
+<Value>Open</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="0" Y="1.9" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="3.18" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="0" Y="-1.9" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="3.18" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="FillRect" LineWidth="0.25">
+<Points>
+<Point X="-1.27" Y="0.38" />
+<Point X="1.27" Y="1.9" />
+</Points>
+</Shape>
+<Shape Id="1" Type="FillRect" LineWidth="0.25">
+<Points>
+<Point X="-1.27" Y="-1.9" />
+<Point X="1.27" Y="-0.38" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="10">
+<Part Id="0" RefDes="BZ" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="5.08" Height="5.08" LockTypeChange="N">
+<Pattern Style="PatType12" />
+<Name>PKLCS1212E4001-R1</Name>
+<PartName>Part 1</PartName>
+<Value>PKLCS1212E4001</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="0" Y="2.54" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="2.54" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="0" Y="-2.54" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="2" Length="2.54" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>2</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Rectangle" LineWidth="0.25">
+<Points>
+<Point X="-2.54" Y="-2.54" />
+<Point X="2.54" Y="2.54" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Text" FontVector="Y" FontMono="N" FontSize="5" FontSizeFloat="5" FontColor="0" TextShow="Any Text" FontWidth="-2" FontScale="1" HorzAlign="Center" VertAlign="Center" TextAlign="Center" LineSpacing="1.2" TextWidth="2.2897" TextHeight="2.4675">
+<TextLines>
+<TextLine>BZ</TextLine>
+</TextLines>
+<Points>
+<Point X="0" Y="0" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="11">
+<Part Id="0" RefDes="BT" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="5.08" Height="1.27" LockTypeChange="N">
+<Pattern Style="PatType13" />
+<Name>Keystone 3034 (CR2032)</Name>
+<PartName>Part 1</PartName>
+<Value>CR2032</Value>
+<Origin X="0" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="-2.54" Y="0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="1" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>+</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="2.54" Y="0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="90" PadId="2" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>+</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="2" X="0" Y="-0.635" Locked="N" Type="Default" ElectricType="Passive" Orientation="270" PadId="3" Length="4.445" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>-</Name>
+<PadNumber>3</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-2.54" Y="0.635" />
+<Point X="2.54" Y="0.635" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Line" LineWidth="0.25">
+<Points>
+<Point X="-1.27" Y="-0.635" />
+<Point X="1.27" Y="-0.635" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="12">
+<Part Id="0" RefDes="J" PartType="Normal" Type="Free" Int1="0" Int2="0" Width="5.08" Height="17.78" LockTypeChange="N">
+<Pattern Style="PatType3" />
+<Name>PinHeader_1x06 (programming)</Name>
+<PartName>Part 1</PartName>
+<Value>PDK ICP</Value>
+<Origin X="-2.54" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="-2.54" Y="6.35" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="1" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>VDD</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="1" X="-2.54" Y="3.81" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="2" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA3</Name>
+<PadNumber>2</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="2" X="-2.54" Y="1.27" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="3" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA4</Name>
+<PadNumber>3</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="3" X="-2.54" Y="-1.27" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="4" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA5</Name>
+<PadNumber>4</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="4" X="-2.54" Y="-3.81" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="5" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>PA6</Name>
+<PadNumber>5</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+<Pin Id="5" X="-2.54" Y="-6.35" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="6" Length="5.08" ShowName="Y" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>GND</Name>
+<PadNumber>6</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Rectangle" LineWidth="0.25">
+<Points>
+<Point X="-2.54" Y="-8.89" />
+<Point X="2.54" Y="8.89" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="13">
+<Part Id="0" RefDes="NL" PartType="Net Port" ShowNumbers="Hide" Type="Free" Int1="0" Int2="0" Width="7.62" Height="2" LockTypeChange="N">
+<Pattern Style="PatType8" />
+<Name>NetLabelR</Name>
+<PartName>Part 1</PartName>
+<Origin X="-1.27" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="-3.81" Y="0" Locked="N" Type="Default" ElectricType="Passive" Orientation="0" PadId="-1" Length="2.54" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Polyline" LineWidth="0.25">
+<Points>
+<Point X="-3.81" Y="0" />
+<Point X="-2.91" Y="1" />
+<Point X="3.81" Y="1" />
+<Point X="3.81" Y="-1" />
+<Point X="-2.91" Y="-1" />
+<Point X="-3.81" Y="0" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Text" FontVector="Y" FontMono="N" FontSize="5" FontSizeFloat="5" FontColor="0" TextShow="Name" FontWidth="-2" FontScale="1" HorzAlign="Center" VertAlign="Center" TextAlign="Center" LineSpacing="1.2">
+<Points>
+<Point X="0.254" Y="0" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+<Component Id="14">
+<Part Id="0" RefDes="NL" PartType="Net Port" ShowNumbers="Hide" Type="Free" Int1="0" Int2="0" Width="7.62" Height="2" LockTypeChange="N">
+<Pattern Style="PatType8" />
+<Name>NetLabelL</Name>
+<PartName>Part 1</PartName>
+<Origin X="1.27" Y="0" />
+<SpiceModel Type="SubCkt" />
+<Pins>
+<Pin Id="0" X="3.81" Y="0" Locked="N" Type="Default" ElectricType="Passive" Orientation="180" PadId="-1" Length="2.54" ShowName="N" NumXShift="0" NumYShift="0" NameXShift="0" NameYShift="0" SignalDelay="0" NumOrientation="0" NameOrientation="0">
+<Name>1</Name>
+<PadNumber>1</PadNumber>
+<NameFont Size="5" FontSizeFloat="5" Width="-2" Scale="1" FontMono="N" />
+</Pin>
+</Pins>
+<Shapes>
+<Shape Id="0" Type="Polyline" LineWidth="0.25">
+<Points>
+<Point X="3.81" Y="0" />
+<Point X="2.91" Y="1" />
+<Point X="-3.81" Y="1" />
+<Point X="-3.81" Y="-1" />
+<Point X="2.91" Y="-1" />
+<Point X="3.81" Y="0" />
+</Points>
+</Shape>
+<Shape Id="1" Type="Text" FontVector="Y" FontMono="N" FontSize="5" FontSizeFloat="5" FontColor="0" TextShow="Name" FontWidth="-2" FontScale="1" HorzAlign="Center" VertAlign="Center" TextAlign="Center" LineSpacing="1.2">
+<Points>
+<Point X="-0.254" Y="0" />
+</Points>
+</Shape>
+</Shapes>
+</Part>
+</Component>
+</Components>
+</Library>
+<Board>
+<BoardOutline>
+<Points>
+<Point X="-13" Y="-13" Arc="N" />
+<Point X="13" Y="-13" Arc="N" />
+<Point X="13" Y="13" Arc="N" />
+<Point X="-13" Y="13" Arc="N" />
+</Points>
+</BoardOutline>
+<Panel Type="V-Scoring" Columns="1" Rows="1" ColumnSpacing="2.4" RowSpacing="2.4" PanelizeSingle="N" RailShow="N" RailLeft="0" RailRight="0" RailTop="0" RailBottom="0" LeftGap="2.4" RightGap="2.4" TopGap="2.4" BottomGap="2.4" TabWidth="4.5" TabRadius="1.2" TabStep="75" HoleDiam="0.8" HoleStep="1.2" HoleInset="0.01" HoleKeepout="1" TabsDone="N" CombinedRadius="1.2" KeepMaterial="N" BorderTabs="0" />
+<SheetSettings>
+<DisplayTitles>N</DisplayTitles>
+<DisplaySheet>N</DisplaySheet>
+<Xpos>-0.64854</Xpos>
+<Ypos>-0.13528</Ypos>
+<Scale>1010.89406</Scale>
+<SheetWidth>208.775</SheetWidth>
+<SheetHeight>297.001</SheetHeight>
+<LeftMargin>20</LeftMargin>
+<TopMargin>5</TopMargin>
+<RightMargin>5</RightMargin>
+<BottomMargin>5</BottomMargin>
+<BorderZones>
+<Visible>N</Visible>
+<HorzZones>4</HorzZones>
+<VertZones>4</VertZones>
+<Standard>0</Standard>
+<FontName>Arial</FontName>
+<FontSize>10</FontSize>
+<FontLineWidth>-2</FontLineWidth>
+<Border>N</Border>
+<HorzBorderSize>5.004</HorzBorderSize>
+<VertBorderSize>5.004</VertBorderSize>
+</BorderZones>
+</SheetSettings>
+<Settings>
+<Markings>
+<CompRotate>N</CompRotate>
+<FontVector>Y</FontVector>
+<FontMono>N</FontMono>
+<FontName>Arial</FontName>
+<FontSize>5</FontSize>
+<FontSizeFloat>5</FontSizeFloat>
+<FontWidth>-2</FontWidth>
+<FontScale>1</FontScale>
+<RefDesGlobal SilkShow="Show" SilkAlign="Auto" AssyShow="Common" AssyAlign="Auto" />
+<NameGlobal SilkShow="Common" SilkAlign="Auto" AssyShow="Common" AssyAlign="Auto" />
+<ValueGlobal SilkShow="Common" SilkAlign="Auto" AssyShow="Common" AssyAlign="Auto" />
+<PatternGlobal SilkShow="Common" SilkAlign="Auto" AssyShow="Common" AssyAlign="Auto" />
+<ManufacturerGlobal SilkShow="Common" SilkAlign="Auto" AssyShow="Common" AssyAlign="Auto" />
+<DatasheetGlobal SilkShow="Common" SilkAlign="Auto" AssyShow="Common" AssyAlign="Auto" />
+<AddFieldsGlobal />
+</Markings>
+<Grid>
+<Visible>Y</Visible>
+<Snap>Y</Snap>
+<Size>0.25</Size>
+<YSize>0.65</YSize>
+<YIdentical>Y</YIdentical>
+</Grid>
+<Origin>
+<Visible>Y</Visible>
+<AxisColor>16711680</AxisColor>
+<X>3.81</X>
+<Y>11</Y>
+</Origin>
+<Assembly>
+<Pads>N</Pads>
+<Silk>N</Silk>
+<CompBorders>N</CompBorders>
+<BoardOutline>N</BoardOutline>
+</Assembly>
+<LayerDisplayMode>Contrast</LayerDisplayMode>
+<EditInactiveLayer>N</EditInactiveLayer>
+<LineWidth>
+<Silk>0.25</Silk>
+<Table>0.25</Table>
+<Titles>0.25</Titles>
+<BoardOutline>0.14</BoardOutline>
+<Assembly>0.127</Assembly>
+<CompOutline>0.05</CompOutline>
+<Courtyard>0.05</Courtyard>
+</LineWidth>
+<Routing>
+<Router>Shape</Router>
+<TraceWidth>0.3</TraceWidth>
+<TraceClearance>0.2</TraceClearance>
+<BoardClearance>0.762</BoardClearance>
+<ViaSize>0.6</ViaSize>
+<ViaHole>0.3</ViaHole>
+<FanoutLength>0.33867</FanoutLength>
+</Routing>
+<StackLength>Y</StackLength>
+<SignalDelayLength>N</SignalDelayLength>
+<SolderMaskSwell>0.05</SolderMaskSwell>
+<PasteMaskShrink>0.05</PasteMaskShrink>
+<ShowCompFiducials>Y</ShowCompFiducials>
+<LayerPanel TopAssy="N" TopMask="N" TopPaste="N" BotAssy="N" BotMask="N" BotPaste="N" TopTerminals="N" BotTerminals="N" TopCourtyard="Y" BotCourtyard="Y" TopOutline="N" BotOutline="N" TopDimensions="Y" BotDimensions="Y" />
+<RelatedSchem>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\beeper.dchxml</Path>
+<Var>%projectdir%\beeper.dchxml</Var>
+</RelatedSchem>
+<SchemNetClasses>N</SchemNetClasses>
+<TopComponentLock>N</TopComponentLock>
+<BottomComponentLock>N</BottomComponentLock>
+<LockNetStructure>N</LockNetStructure>
+<FlipTextAuto>Y</FlipTextAuto>
+<JumperLayer>Silk</JumperLayer>
+<ProjectDir>C:\Users\alexa\Projects\aram\beeper\soft\hardware</ProjectDir>
+</Settings>
+<ProjectLibs Sorted="N">
+<Libs>
+<Lib>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\beeper_patterns.libxml</Path>
+<Var>%projectdir%\beeper_patterns.libxml</Var>
+</Lib>
+</Libs>
+</ProjectLibs>
+<CopperLayers>
+<Lay Id="0" Type="Signal" PlanePad="By Pads" PlaneRing="0.2" Color="4227327">
+<Name>Top</Name>
+</Lay>
+<Lay Id="1" Type="Signal" PlanePad="By Pads" PlaneRing="0.2" Color="16744448">
+<Name>Bottom</Name>
+</Lay>
+</CopperLayers>
+<LayerStackName>2 Layers Default Stackup</LayerStackName>
+<LayerStackItems>
+<LayerStackItem Lay="-1">
+<Material Type="Dielectric" VariableThickness="Y" Thickness="0.01" Constant="3.5" TraceWidth="0">
+<Name>Solder Resist</Name>
+</Material>
+</LayerStackItem>
+<LayerStackItem Lay="0">
+<Material Type="Conductor" VariableThickness="N" Thickness="0.0348" Constant="0" TraceWidth="0.2">
+<Name>Copper 1 Oz</Name>
+</Material>
+</LayerStackItem>
+<LayerStackItem Lay="-1">
+<Material Type="Dielectric" VariableThickness="Y" Thickness="1.5" Constant="4.6" TraceWidth="0">
+<Name>FR-4</Name>
+</Material>
+</LayerStackItem>
+<LayerStackItem Lay="1">
+<Material Type="Conductor" VariableThickness="N" Thickness="0.0348" Constant="0" TraceWidth="0.2">
+<Name>Copper 1 Oz</Name>
+</Material>
+</LayerStackItem>
+<LayerStackItem Lay="-1">
+<Material Type="Dielectric" VariableThickness="Y" Thickness="0.01" Constant="3.5" TraceWidth="0">
+<Name>Solder Resist</Name>
+</Material>
+</LayerStackItem>
+</LayerStackItems>
+<ViaStyles>
+<ViaStyle Id="0" Size="0.6" HoleSize="0.3">
+<Name>Default</Name>
+</ViaStyle>
+</ViaStyles>
+<NetClasses>
+<NetClass Id="0" UpdateId="0" Type="Normal" AllLayers="Y" CheckLength="N" AllVias="Y" PerformDRC="N" Phase="2" Phase_ErrorLength="5" LengthDelta="2.54" MaxUncoupledLength="10" Tolerance="2">
+<Name>Default</Name>
+<LayProperties>
+<LayProperty Width="0.3" MinWidth="0.2" MaxWidth="5" Clearance="0.2">
+<ClearanceDetails />
+</LayProperty>
+</LayProperties>
+<AllowedVias>
+<ViaStyle>0</ViaStyle>
+</AllowedVias>
+<Autorouting RoutePriority="N" PriorityValue="1" RouteMaxVias="N" MaxViasValue="10000" RouteMaxIncorrectWay="N" MaxIncorrectWayValue="30000" RouteAllLayers="Y" />
+</NetClass>
+</NetClasses>
+<ClassToClass Enabled="N" />
+<DRC Name="" AllLayers="Y" CheckClearance="Y" CheckSize="N" CheckJumpers="N" CheckCopperPours="Y" CheckClassToClass="Y" CheckSilk="N" CheckLength="Y" CheckKeepouts="N" CheckSameNet="N" CheckSameComponentPads="Y" CheckCourtyard="N" SilkClearance="0.12">
+<ShowList>Y</ShowList>
+<RealTimeMode>0</RealTimeMode>
+<DRCDone>N</DRCDone>
+<LayClearances>
+<LayClearance Lay="0" SameTraceToTrace="0" SameSmdToVia="0" SameSmdToPad="0" SameSmdToSmd="0">
+<ClearanceDetails TraceToTrace="0.15233" TraceToVia="0.15233" TraceToPad="0.15233" TraceToSmd="0.15233" TraceToCopper="0.15233" TraceToDrill="0.15233" TraceToBoard="0.152" ViaToVia="0.15233" ViaToPad="0.15233" ViaToSmd="0.15233" ViaToCopper="0.15233" ViaToDrill="0.15233" ViaToBoard="0.3" PadToPad="0.15233" PadToSmd="0.15233" PadToCopper="0.15233" PadToDrill="0.15233" PadToBoard="0.3" SmdToSmd="0.15233" SmdToCopper="0.15233" SmdToDrill="0.15233" SmdToBoard="0.3" CopperToCopper="0.15233" CopperToDrill="0.15233" CopperToBoard="0.3" DrillToDrill="0.15233" DrillToBoard="0.3" />
+</LayClearance>
+</LayClearances>
+<LaySizes>
+<LaySize Lay="0" MinTrace="0.203" MinDrill="0.30467" MinRing="0.127" MaxRing="50.83333" MaxPlatedHole="5.08" MaxNonPlatedHole="5.08" />
+</LaySizes>
+</DRC>
+<LastDRC Name="Last DRC" AllLayers="Y" CheckClearance="Y" CheckSize="N" CheckJumpers="N" CheckCopperPours="Y" CheckClassToClass="Y" CheckSilk="N" CheckLength="Y" CheckKeepouts="N" CheckSameNet="N" CheckSameComponentPads="Y" CheckCourtyard="N" SilkClearance="0.12">
+<LayClearances>
+<LayClearance Lay="0" SameTraceToTrace="0" SameSmdToVia="0" SameSmdToPad="0" SameSmdToSmd="0">
+<ClearanceDetails TraceToTrace="0.15233" TraceToVia="0.15233" TraceToPad="0.15233" TraceToSmd="0.15233" TraceToCopper="0.15233" TraceToDrill="0.15233" TraceToBoard="0.3" ViaToVia="0.15233" ViaToPad="0.15233" ViaToSmd="0.15233" ViaToCopper="0.15233" ViaToDrill="0.15233" ViaToBoard="0.3" PadToPad="0.15233" PadToSmd="0.15233" PadToCopper="0.15233" PadToDrill="0.15233" PadToBoard="0.3" SmdToSmd="0.15233" SmdToCopper="0.15233" SmdToDrill="0.15233" SmdToBoard="0.3" CopperToCopper="0.15233" CopperToDrill="0.15233" CopperToBoard="0.3" DrillToDrill="0.15233" DrillToBoard="0.3" />
+</LayClearance>
+</LayClearances>
+<LaySizes>
+<LaySize Lay="0" MinTrace="0.203" MinDrill="0.30467" MinRing="0.127" MaxRing="50.83333" MaxPlatedHole="5.08" MaxNonPlatedHole="5.08" />
+</LaySizes>
+</LastDRC>
+<ConnectivityCheck Traces="Y" Shapes="Y" CopperPours="Y" />
+<MainLengthRule Type="By User" Delta="0" AnyError="N" NetClass="-1">
+<Name/>
+</MainLengthRule>
+<Components>
+<Component Id="0" UpdateId="1" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType0" X="0" Y="0" Side="Bottom" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>BT1</RefDes>
+<Name>BatteryHolder_Keystone_3034_1x20mm</Name>
+<Value>CR2032</Value>
+<LibPath>
+<Path>C:\Users\alexa\Projects\aram\beeper\soft\hardware\beeper_patterns.libxml</Path>
+<Var>%projectdir%\beeper_patterns.libxml</Var>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="N" InternalConnection="-1" />
+<Pad Id="2" NetId="7" DefStyle="N" InternalConnection="-1" />
+<Pad Id="3" NetId="1" DefStyle="N" InternalConnection="-1" />
+</Pads>
+</Component>
+<Component Id="1" UpdateId="5" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType1" X="0" Y="0" Angle="4.71239" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin" Locked="Y">
+<RefDes>BZ1</RefDes>
+<Name>PKLCS1212E4001-R1</Name>
+<Value>PKLCS1212E4001</Value>
+<LibPath>
+<Path/>
+<Var/>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="0" DefStyle="N" InternalConnection="-1" />
+<Pad Id="2" NetId="1" DefStyle="N" InternalConnection="-1" />
+</Pads>
+</Component>
+<Component Id="2" UpdateId="3" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType2" X="-11" Y="-10.5" Angle="10.9956" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>C1</RefDes>
+<Name>CAP_0805_N</Name>
+<Value>100nF</Value>
+<LibPath>
+<Path>C:\Users\alexa\Documents\DipTrace\My Libraries\Capacitors Chip Inch.eli</Path>
+<Var>C:\Users\alexa\Documents\DipTrace\My Libraries\Capacitors Chip Inch.eli</Var>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>CAP_0805_INCH</Text>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</AddField>
+</AddFields>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="Y" InternalConnection="-1">
+<Note>2</Note>
+</Pad>
+<Pad Id="2" NetId="1" DefStyle="Y" InternalConnection="-1">
+<Note>1</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="3" UpdateId="2" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType2" X="-8.5" Y="-10.5" Angle="4.71239" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>C2</RefDes>
+<Name>CAP_0805_N</Name>
+<Value>10uF</Value>
+<LibPath>
+<Path>C:\Users\alexa\Documents\DipTrace\My Libraries\Capacitors Chip Inch.eli</Path>
+<Var>C:\Users\alexa\Documents\DipTrace\My Libraries\Capacitors Chip Inch.eli</Var>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>CAP_0805_INCH</Text>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</AddField>
+</AddFields>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="Y" InternalConnection="-1">
+<Note>2</Note>
+</Pad>
+<Pad Id="2" NetId="1" DefStyle="Y" InternalConnection="-1">
+<Note>1</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="4" UpdateId="9" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType3" X="0" Y="11" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>J1</RefDes>
+<Name>PinHeader_1x06 (programming)</Name>
+<Value>PDK ICP</Value>
+<LibPath>
+<Path/>
+<Var/>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="N" InternalConnection="-1">
+<Note>VDD</Note>
+</Pad>
+<Pad Id="2" NetId="2" DefStyle="N" InternalConnection="-1">
+<Note>PA3</Note>
+</Pad>
+<Pad Id="3" NetId="3" DefStyle="N" InternalConnection="-1">
+<Note>PA4</Note>
+</Pad>
+<Pad Id="4" NetId="4" DefStyle="N" InternalConnection="-1">
+<Note>PA5</Note>
+</Pad>
+<Pad Id="5" NetId="5" DefStyle="N" InternalConnection="-1">
+<Note>PA6</Note>
+</Pad>
+<Pad Id="6" NetId="1" DefStyle="N" InternalConnection="-1">
+<Note>GND</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="5" UpdateId="6" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType4" X="3" Y="-10.5" Angle="10.9956" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>JP1</RefDes>
+<Name>SolderJumper_Open</Name>
+<Value>SEL0</Value>
+<LibPath>
+<Path/>
+<Var/>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="4" DefStyle="N" InternalConnection="-1">
+<Note>1</Note>
+</Pad>
+<Pad Id="2" NetId="1" DefStyle="N" InternalConnection="-1">
+<Note>2</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="6" UpdateId="7" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType4" X="0" Y="-10.5" Angle="4.71239" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>JP2</RefDes>
+<Name>SolderJumper_Open</Name>
+<Value>SEL1</Value>
+<LibPath>
+<Path/>
+<Var/>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="5" DefStyle="N" InternalConnection="-1">
+<Note>1</Note>
+</Pad>
+<Pad Id="2" NetId="1" DefStyle="N" InternalConnection="-1">
+<Note>2</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="7" UpdateId="8" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType4" X="-3" Y="-10.5" Angle="4.71239" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>JP3</RefDes>
+<Name>SolderJumper_Open</Name>
+<Value>SEL2</Value>
+<LibPath>
+<Path/>
+<Var/>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="6" DefStyle="N" InternalConnection="-1">
+<Note>1</Note>
+</Pad>
+<Pad Id="2" NetId="1" DefStyle="N" InternalConnection="-1">
+<Note>2</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="8" UpdateId="4" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType5" X="-3" Y="8" Angle="6.28319" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>R1</RefDes>
+<Name>RES_0805_N</Name>
+<Value>330</Value>
+<LibPath>
+<Path>C:\Users\alexa\Documents\DipTrace\My Libraries\Resistors Chip Inch.eli</Path>
+<Var>C:\Users\alexa\Documents\DipTrace\My Libraries\Resistors Chip Inch.eli</Var>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<AddFields>
+<AddField Type="Text">
+<Name>Unique Name</Name>
+<Text>RES_0805_INCH</Text>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</AddField>
+</AddFields>
+<Pads>
+<Pad Id="1" NetId="2" DefStyle="Y" InternalConnection="-1">
+<Note>1</Note>
+</Pad>
+<Pad Id="2" NetId="0" DefStyle="Y" InternalConnection="-1">
+<Note>2</Note>
+</Pad>
+</Pads>
+</Component>
+<Component Id="9" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="-9.69" Y="0">
+<RefDes>StaticVia1</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="10" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="-9.69" Y="0.75">
+<RefDes>StaticVia2</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="11" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="-9.69" Y="-0.75">
+<RefDes>StaticVia3</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="12" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="-1" Y="0">
+<RefDes>StaticVia4</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="1" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="13" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="0" Y="1">
+<RefDes>StaticVia5</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="1" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="14" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="1" Y="0">
+<RefDes>StaticVia6</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="1" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="15" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="0" Y="-1">
+<RefDes>StaticVia7</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="1" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="16" UpdateId="-1" OriginCommon="Hide" OriginCourtyard="Show" Type="Via" ViaStyle="0" X="0" Y="0">
+<RefDes>StaticVia8</RefDes>
+<Name>Static Via</Name>
+<Value/>
+<Pads>
+<Pad Id="1" NetId="1" DefStyle="Y" />
+</Pads>
+</Component>
+<Component Id="17" UpdateId="0" OriginCommon="Hide" OriginCourtyard="Show" PatternStyle="PatType6" X="-9.5" Y="0" Angle="1.5708" Side="Top" MarkingFontSize="5" MarkingFontSizeFloat="5" GridAlign="Origin">
+<RefDes>U1</RefDes>
+<Name>PFS154-S08</Name>
+<Value>PFS154-S08</Value>
+<LibPath>
+<Path/>
+<Var/>
+</LibPath>
+<RefDesMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</RefDesMarking>
+<NameMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</NameMarking>
+<ValueMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ValueMarking>
+<PatternMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</PatternMarking>
+<ManufacturerMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</ManufacturerMarking>
+<DatasheetMarking>
+<Silk Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+<Assy Show="Common" Align="Common" Horz="Center" Vert="Center" X="0" Y="0" Angle="0" />
+</DatasheetMarking>
+<Pads>
+<Pad Id="1" NetId="7" DefStyle="N" InternalConnection="-1">
+<Note>VDD</Note>
+</Pad>
+<Pad Id="2" NetId="6" DefStyle="N" InternalConnection="-1">
+<Note>PA7</Note>
+</Pad>
+<Pad Id="3" NetId="5" DefStyle="N" InternalConnection="-1">
+<Note>PA6</Note>
+</Pad>
+<Pad Id="4" NetId="4" DefStyle="N" InternalConnection="-1">
+<Note>PA5</Note>
+</Pad>
+<Pad Id="5" NetId="2" DefStyle="N" InternalConnection="-1">
+<Note>PA3</Note>
+</Pad>
+<Pad Id="6" NetId="3" DefStyle="N" InternalConnection="-1">
+<Note>PA4</Note>
+</Pad>
+<Pad Id="7" NetId="-1" DefStyle="N" InternalConnection="-1">
+<Note>PA0</Note>
+</Pad>
+<Pad Id="8" NetId="1" DefStyle="N" InternalConnection="-1">
+<Note>GND</Note>
+</Pad>
+</Pads>
+</Component>
+</Components>
+<Ratlines>
+<Ratline Id="0" Hidden="Y" X1="-1" Y1="0" X2="-11.405" Y2="2.475" Comp1="12" Pad1="1" Comp2="17" Pad2="8" />
+</Ratlines>
+<Nets>
+<Net Id="0" HiddenId="3" NetClass="0">
+<Name>BUZ</Name>
+<Pads>
+<Item Comp="1" Pad="1" />
+<Item Comp="8" Pad="2" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="1" SubObject1="1" Point1="-1" Connected2="Pad" Object2="8" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="5.6" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="7" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-1" Y="8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-2.105" Y="8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="1" HiddenId="1" NetClass="0">
+<Name>GND</Name>
+<Pads>
+<Item Comp="7" Pad="2" />
+<Item Comp="6" Pad="2" />
+<Item Comp="5" Pad="2" />
+<Item Comp="2" Pad="2" />
+<Item Comp="3" Pad="2" />
+<Item Comp="15" Pad="1" />
+<Item Comp="1" Pad="2" />
+<Item Comp="13" Pad="1" />
+<Item Comp="12" Pad="1" />
+<Item Comp="14" Pad="1" />
+<Item Comp="16" Pad="1" />
+<Item Comp="4" Pad="6" />
+<Item Comp="0" Pad="3" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="7" SubObject1="2" Point1="-1" Connected2="Pad" Object2="6" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-3" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="1" Connected1="Pad" Object1="5" SubObject1="2" Point1="-1" Connected2="Pad" Object2="6" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="3.00002" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="2" Connected1="Pad" Object1="2" SubObject1="2" Point1="-1" Connected2="Pad" Object2="3" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-10.99998" Y="-11.35" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-8.5" Y="-11.35" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="3" Connected1="Pad" Object1="3" SubObject1="2" Point1="-1" Connected2="Pad" Object2="7" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-8.5" Y="-11.35" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-3.2" Y="-11.35" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-3" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="4" Connected1="Pad" Object1="15" SubObject1="1" Point1="-1" Connected2="Pad" Object2="1" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="-1" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="-5.6" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="5" Connected1="Pad" Object1="15" SubObject1="1" Point1="-1" Connected2="Pad" Object2="13" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="-1" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="0" Y="1" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="6" Connected1="Pad" Object1="12" SubObject1="1" Point1="-1" Connected2="Trace" Object2="1" SubObject2="5" Point2="1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-1" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="7" Connected1="Pad" Object1="14" SubObject1="1" Point1="-1" Connected2="Trace" Object2="1" SubObject2="5" Point2="1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="1" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="8" Connected1="Pad" Object1="16" SubObject1="1" Point1="0" Connected2="Trace" Object2="1" SubObject2="5" Point2="1" PairSeparateTrace="0">
+<Points>
+<Point Id="0" X="0" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="9" Connected1="Pad" Object1="1" SubObject1="2" Point1="-1" Connected2="Pad" Object2="5" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="-5.6" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="4.1" Y="-5.6" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="5.5" Y="-7" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="5.5" Y="-10.5" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="4" X="4.85" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="5" X="3.00002" Y="-11.15" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="10" Connected1="Pad" Object1="4" SubObject1="6" Point1="-1" Connected2="Pad" Object2="14" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="6.35" Y="11" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="6.35" Y="5.35" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="1.5" Y="0.5" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="1" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="11" Connected1="Pad" Object1="0" SubObject1="3" Point1="0" Connected2="Trace" Object2="1" SubObject2="10" Point2="2" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="1.5" Y="0.5" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="12" Connected1="Pad" Object1="16" SubObject1="1" Point1="0" Connected2="Pad" Object2="0" SubObject2="3" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="2" PairSubPoint="0" />
+<Point Id="1" X="0" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="2" HiddenId="2" NetClass="0">
+<Name>PA3</Name>
+<Pads>
+<Item Comp="4" Pad="2" />
+<Item Comp="8" Pad="1" />
+<Item Comp="17" Pad="5" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="4" SubObject1="2" Point1="-1" Connected2="Pad" Object2="8" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-3.81" Y="11" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-3.81" Y="8.085" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-3.895" Y="8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="1" Connected1="Pad" Object1="8" SubObject1="1" Point1="-1" Connected2="Pad" Object2="17" SubObject2="5" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-3.895" Y="8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-6.5" Y="8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-7.595" Y="6.905" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="3" X="-7.595" Y="2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="3" HiddenId="4" NetClass="0">
+<Name>PA4</Name>
+<Pads>
+<Item Comp="4" Pad="3" />
+<Item Comp="17" Pad="6" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="4" SubObject1="3" Point1="-1" Connected2="Pad" Object2="17" SubObject2="6" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-1.27" Y="11" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-2.95" Y="9.32" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-2.95" Y="4.05" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-6.25" Y="0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="4" X="-8.44" Y="0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="2" PairSubPoint="0" />
+<Point Id="5" X="-8.865" Y="1.175" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="2" PairSubPoint="0" />
+<Point Id="6" X="-8.865" Y="2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="2" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="4" HiddenId="5" NetClass="0">
+<Name>PA5</Name>
+<Pads>
+<Item Comp="5" Pad="1" />
+<Item Comp="17" Pad="4" />
+<Item Comp="4" Pad="4" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="5" SubObject1="1" Point1="-1" Connected2="Pad" Object2="17" SubObject2="4" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="2.99998" Y="-9.85" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="2.99998" Y="-7.49998" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="2.5" Y="-7" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-6.5" Y="-7" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="4" X="-7.595" Y="-5.905" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="5" X="-7.595" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="1" Connected1="Pad" Object1="17" SubObject1="4" Point1="-1" Connected2="Pad" Object2="4" SubObject2="4" Point2="-1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-7.595" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-7.595" Y="-1.155" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-7.19" Y="-0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-3.75" Y="-0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="4" X="-1" Y="2" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="5" X="3.5" Y="2" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="6" X="4.81" Y="3.31" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="4" PairSubPoint="0" />
+<Point Id="7" X="4.81" Y="9.10924" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="5" PairSubPoint="0" />
+<Point Id="8" X="4.26924" Y="9.65" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="5" PairSubPoint="0" />
+<Point Id="9" X="2.62" Y="9.65" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="10" X="1.27" Y="11" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="5" HiddenId="6" NetClass="0">
+<Name>PA6</Name>
+<Pads>
+<Item Comp="6" Pad="1" />
+<Item Comp="17" Pad="3" />
+<Item Comp="4" Pad="5" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="6" SubObject1="1" Point1="-1" Connected2="Pad" Object2="17" SubObject2="3" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="0" Y="-9.85" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="0" Y="-8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-0.5" Y="-7.5" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-7.5" Y="-7.5" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="4" X="-8.865" Y="-6.135" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="5" X="-8.865" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="1" Connected1="Pad" Object1="17" SubObject1="3" Point1="-1" Connected2="Pad" Object2="4" SubObject2="5" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-8.865" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-8.865" Y="-0.865" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-8" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-4.5" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="4" X="-1.5" Y="3" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="5" X="3" Y="3" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="6" X="3.81" Y="3.81" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="7" X="3.81" Y="8.75" Lay="0" Width="0.3" ShieldGroup="-1" ViaStyle="0" PairPoint="5" PairSubPoint="0" />
+<Point Id="8" X="3.81" Y="11" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="6" HiddenId="7" NetClass="0">
+<Name>PA7</Name>
+<Pads>
+<Item Comp="7" Pad="1" />
+<Item Comp="17" Pad="2" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="7" SubObject1="1" Point1="-1" Connected2="Pad" Object2="17" SubObject2="2" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-3" Y="-9.85" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-3" Y="-8.5" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-3.5" Y="-8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-8.5" Y="-8" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="1" PairSubPoint="0" />
+<Point Id="4" X="-10.135" Y="-6.365" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+<Point Id="5" X="-10.135" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="3" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+<Net Id="7" HiddenId="0" NetClass="0">
+<Name>VDD</Name>
+<Pads>
+<Item Comp="10" Pad="1" />
+<Item Comp="9" Pad="1" />
+<Item Comp="11" Pad="1" />
+<Item Comp="17" Pad="1" />
+<Item Comp="0" Pad="1" />
+<Item Comp="0" Pad="2" />
+<Item Comp="3" Pad="1" />
+<Item Comp="2" Pad="1" />
+<Item Comp="4" Pad="1" />
+</Pads>
+<Traces>
+<Trace Id="0" Connected1="Pad" Object1="10" SubObject1="1" Point1="-1" Connected2="Pad" Object2="9" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-9.69" Y="0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-9.69" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="1" Connected1="Pad" Object1="9" SubObject1="1" Point1="-1" Connected2="Pad" Object2="11" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-9.69" Y="0" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-9.69" Y="-0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="2" Connected1="Pad" Object1="17" SubObject1="1" Point1="-1" Connected2="Pad" Object2="11" SubObject2="1" Point2="-1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-11.405" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-11.405" Y="-0.965" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-11.19" Y="-0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="-9.69" Y="-0.75" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="3" Connected1="Pad" Object1="0" SubObject1="1" Point1="-1" Connected2="Pad" Object2="10" SubObject2="1" Point2="-1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-10.235" Y="0.75" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-9.69" Y="0.75" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="4" Connected1="Pad" Object1="9" SubObject1="1" Point1="-1" Connected2="Pad" Object2="0" SubObject2="1" Point2="-1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-9.69" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="5" Connected1="Pad" Object1="0" SubObject1="1" Point1="-1" Connected2="Pad" Object2="0" SubObject2="2" Point2="-1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-10.985" Y="-3.515" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-4.5" Y="-10" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="3" X="4.5" Y="-10" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="4" X="10.985" Y="-3.515" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="5" X="10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="6" Connected1="Pad" Object1="3" SubObject1="1" Point1="-1" Connected2="Pad" Object2="2" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-8.5" Y="-9.65" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-11.00002" Y="-9.65" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="7" Connected1="Pad" Object1="17" SubObject1="1" Point1="-1" Connected2="Pad" Object2="2" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-11.405" Y="-2.475" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-11.405" Y="-9.24502" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-11.00002" Y="-9.65" Lay="0" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="8" Connected1="Pad" Object1="4" SubObject1="1" Point1="-1" Connected2="Pad" Object2="0" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-6.35" Y="11" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-10.985" Y="6.365" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="9" Connected1="Pad" Object1="11" SubObject1="1" Point1="-1" Connected2="Pad" Object2="10" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-9.69" Y="-0.75" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-9.69" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-9.69" Y="0.75" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="10" Connected1="Pad" Object1="9" SubObject1="1" Point1="0" Connected2="Trace" Object2="7" SubObject2="9" Point2="1" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-9.69" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-9.69" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+<Trace Id="11" Connected1="Pad" Object1="11" SubObject1="1" Point1="-1" Connected2="Pad" Object2="0" SubObject2="1" Point2="0" PairSeparateTrace="-1">
+<Points>
+<Point Id="0" X="-9.69" Y="-0.75" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="1" X="-10.235" Y="-0.75" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+<Point Id="2" X="-10.985" Y="0" Lay="1" Width="0.3" ShieldGroup="-1" PairPoint="-1" PairSubPoint="0" />
+</Points>
+</Trace>
+</Traces>
+</Net>
+</Nets>
+<CopperPours>
+<CopperPour Id="0" NetId="7" Lay="1" Priority="0" Poured="Y" Type="Solid" Clearance="0.33" UseNetClearance="Y" BoardClearance="0.3" LineWidth="0.635" LineSpacing="0.635" MinimumArea="1" Spoke="4 spoke" SpokeWidth="0.5" ViaDirect="Y" SMD_Separate="Y" SMD_Spoke="4 spoke" SMD_SpokeWidth="0.3" RatlineMode="Automaticaly" SnapToBoard="N" IslandRegion="Y" IslandInternal="Y" IslandConnection="Y" RegionsDone="Y">
+<Points>
+<Point X="-12.7" Y="-12.7" />
+<Point X="12.7" Y="-12.7" />
+<Point X="12.7" Y="12.7" />
+<Point X="-12.7" Y="12.7" />
+</Points>
+</CopperPour>
+<CopperPour Id="1" NetId="1" Lay="0" Priority="0" Poured="Y" Type="Solid" Clearance="0.3" UseNetClearance="Y" BoardClearance="0.3" LineWidth="0.635" LineSpacing="0.635" MinimumArea="1" Spoke="4 spoke" SpokeWidth="0.5" ViaDirect="Y" SMD_Separate="Y" SMD_Spoke="4 spoke" SMD_SpokeWidth="0.3" RatlineMode="Automaticaly" SnapToBoard="N" IslandRegion="N" IslandInternal="Y" IslandConnection="Y" RegionsDone="Y">
+<Points>
+<Point X="-12.7" Y="-12.7" />
+<Point X="12.7" Y="-12.7" />
+<Point X="12.7" Y="12.7" />
+<Point X="-12.7" Y="12.7" />
+</Points>
+</CopperPour>
+</CopperPours>
+<Shapes>
+<Shape Id="0" Type="Text" AllLayers="N" Layer="Top Silk" LayId="0" Angle="0" HorzAlign="Center" VertAlign="Center" TextAlign="Center" Inverted="N" FontVector="Y" FontMono="N" FontSize="3" FontSizeFloat="3" FontWidth="-2" FontScale="1" LineSpacing="1.2" TextWidth="1.37382" TextHeight="1.4805">
+<Points>
+<Point X="-10" Y="-7.6" />
+</Points>
+<FontName>Tahoma</FontName>
+<TextLines>
+<TextLine>S0</TextLine>
+</TextLines>
+</Shape>
+<Shape Id="1" Type="Text" AllLayers="N" Layer="Top Silk" LayId="0" Angle="0" HorzAlign="Center" VertAlign="Center" TextAlign="Center" Inverted="N" FontVector="Y" FontMono="N" FontSize="3" FontSizeFloat="3" FontWidth="-2" FontScale="1" LineSpacing="1.2" TextWidth="1.04616" TextHeight="1.4805">
+<Points>
+<Point X="-6" Y="-7.6" />
+</Points>
+<FontName>Tahoma</FontName>
+<TextLines>
+<TextLine>S1</TextLine>
+</TextLines>
+</Shape>
+<Shape Id="2" Type="Text" AllLayers="N" Layer="Top Silk" LayId="0" Angle="0" HorzAlign="Center" VertAlign="Center" TextAlign="Center" Inverted="N" FontVector="Y" FontMono="N" FontSize="3" FontSizeFloat="3" FontWidth="-2" FontScale="1" LineSpacing="1.2" TextWidth="1.37382" TextHeight="1.4805">
+<Points>
+<Point X="-2.2" Y="-7.6" />
+</Points>
+<FontName>Tahoma</FontName>
+<TextLines>
+<TextLine>S2</TextLine>
+</TextLines>
+</Shape>
+<Shape Id="3" Type="Text" AllLayers="N" Layer="Top Silk" LayId="0" Angle="0" HorzAlign="Center" VertAlign="Center" TextAlign="Center" Inverted="N" FontVector="Y" FontMono="N" FontSize="3" FontSizeFloat="3" FontWidth="-2" FontScale="1" LineSpacing="1.2" TextWidth="0.30043" TextHeight="1.4805">
+<Points>
+<Point X="-8.6" Y="10.8" />
+</Points>
+<FontName>Tahoma</FontName>
+<TextLines>
+<TextLine>1</TextLine>
+</TextLines>
+</Shape>
+<Shape Id="4" Type="Text" AllLayers="N" Layer="Top Silk" LayId="0" Angle="0" HorzAlign="Center" VertAlign="Center" TextAlign="Center" Inverted="N" FontVector="Y" FontMono="N" FontSize="3" FontSizeFloat="3" FontWidth="-2" FontScale="1" LineSpacing="1.2" TextWidth="4.24556" TextHeight="1.4805">
+<Points>
+<Point X="6.2" Y="8.3" />
+</Points>
+<FontName>Tahoma</FontName>
+<TextLines>
+<TextLine>BEEPER</TextLine>
+</TextLines>
+</Shape>
+</Shapes>
+<Dimensions>
+<Dimension Id="0" Type="Horizontal" X1="-13" Y1="13" X2="13" Y2="13" XD="-13" YD="15.125" Layer="Top Dimension" NonSignal="0" Angle="0" ArrowSize="1" ExternalRadius="0" Units="Common" ShowUnits="N" Connected1="Board Outline" Object1="0" SubObject1="0" Point1="3" Connected2="Board Outline" Object2="0" SubObject2="0" Point2="2" FontVector="Y" FontMono="N" FontSize="4" FontSizeFloat="4" FontWidth="-2" FontScale="1" TextWidth="0" TextHeight="1.974">
+<FontName>Tahoma</FontName>
+<PointerText/>
+</Dimension>
+<Dimension Id="1" Type="Vertical" X1="-13" Y1="13" X2="-13" Y2="-13" XD="-16.225" YD="13" Layer="Top Dimension" NonSignal="0" Angle="0" ArrowSize="1" ExternalRadius="0" Units="Common" ShowUnits="N" Connected1="Board Outline" Object1="0" SubObject1="0" Point1="3" Connected2="Board Outline" Object2="0" SubObject2="0" Point2="0" FontVector="Y" FontMono="N" FontSize="4" FontSizeFloat="4" FontWidth="-2" FontScale="1" TextWidth="0" TextHeight="1.974">
+<FontName>Tahoma</FontName>
+<PointerText/>
+</Dimension>
+<Dimension Id="2" Type="Horizontal" X1="-13" Y1="-13" X2="0" Y2="-12.5" XD="-13" YD="-14.5" Layer="Bottom Dimension" NonSignal="0" Angle="0" ArrowSize="1" ExternalRadius="0" Units="Common" ShowUnits="N" Connected1="Board Outline" Object1="0" SubObject1="0" Point1="0" Connected2="-1" Object2="0" SubObject2="0" Point2="0" FontVector="Y" FontMono="N" FontSize="4" FontSizeFloat="4" FontWidth="-2" FontScale="1" TextWidth="0" TextHeight="1.974">
+<FontName>Tahoma</FontName>
+<PointerText/>
+</Dimension>
+<Dimension Id="3" Type="Vertical" X1="-13" Y1="-13" X2="-28.5" Y2="0" XD="-29.5" YD="-13" Layer="Bottom Dimension" NonSignal="0" Angle="0" ArrowSize="1" ExternalRadius="0" Units="Common" ShowUnits="N" Connected1="Board Outline" Object1="0" SubObject1="0" Point1="0" Connected2="-1" Object2="0" SubObject2="0" Point2="0" FontVector="Y" FontMono="N" FontSize="4" FontSizeFloat="4" FontWidth="-2" FontScale="1" TextWidth="0" TextHeight="1.974">
+<FontName>Tahoma</FontName>
+<PointerText/>
+</Dimension>
+<Dimension Id="4" Type="Vertical" X1="-6.35" Y1="11" X2="-13" Y2="13" XD="-15" YD="11" Layer="Top Dimension" NonSignal="0" Angle="0" ArrowSize="1" ExternalRadius="0" Units="Common" ShowUnits="N" Connected1="Pad" Object1="4" SubObject1="1" Point1="0" Connected2="Board Outline" Object2="0" SubObject2="0" Point2="3" FontVector="Y" FontMono="N" FontSize="4" FontSizeFloat="4" FontWidth="-2" FontScale="1" TextWidth="0" TextHeight="1.974">
+<FontName>Tahoma</FontName>
+<PointerText/>
+</Dimension>
+</Dimensions>
+<CopperPourFills>
+<Fill Id="0">
+<L>-12.31877 11.75083 -7.79187 11.75083 0 7.5697 11.75083 12.31901 11.75083 0 -12.31877 11.11917 -7.79187 11.11917 0 7.78663 11.11917 12.31901 11.11917 0 -12.31877 10.4875 -7.79187 10.4875 0 7.69321 10.4875 12.31901 10.4875 0 -12.31877 9.85583 -7.79187 9.85583 0 -2.97769 9.85583 -2.10254 9.85583 0 -0.43746 9.85583 0.43769 9.85583 0 2.10232 9.85583 2.97747 9.85583 0 7.18233 9.85583 12.31901 9.85583 0 -12.31877 9.22417 -2.01595 9.22417 0 2.01573 9.22417 3.06725 9.22417 0 7.0921 9.22417 12.31901 9.22417 0 -12.31877 8.5925 -3.94506 8.5925 0 7.0921 8.5925 12.31901 8.5925 0 -12.31877 7.96083 -5.11537 7.96083 0 7.0921 7.96083 12.31901 7.96083 0 -12.31877 7.32917 -5.99493 7.32917 0 7.0921 7.32917 12.31901 7.32917 0 -12.31877 6.6975 -6.69994 6.6975 0 7.0921 6.6975 12.31901 6.6975 0 -12.31877 6.06583 -7.28191 6.06583 0 7.28168 6.06583 12.31901 6.06583 0 -12.31877 5.43417 -7.76862 5.43417 0 7.7684 5.43417 12.31901 5.43417 0 -12.31877 4.8025 -8.17741 4.8025 0 8.17719 4.8025 12.31901 4.8025 0 -12.31877 4.17083 -8.51921 4.17083 0 8.51944 4.17083 12.31901 4.17083 0 -12.31877 3.53917 -8.80267 3.53917 0 8.80245 3.53917 12.31901 3.53917 0 -9.75803 2.9075 -9.03236 2.9075 0 9.03259 2.9075 9.75781 2.9075 0 -9.75803 2.27583 -9.21329 2.27583 0 9.21306 2.27583 9.75781 2.27583 0 -9.75803 1.64417 -9.34773 1.64417 0 9.3475 1.64417 9.75781 1.64417 0 -9.75803 1.0125 -9.4375 1.0125 0 9.43728 1.0125 9.75781 1.0125 0 -9.75803 -1.51417 -9.3696 -1.51417 0 9.36983 -1.51417 9.75781 -1.51417 0 -9.75803 -2.14583 -9.24473 -2.14583 0 9.24451 -2.14583 9.75781 -2.14583 0 -9.75803 -2.7775 -9.07383 -2.7775 0 9.07361 -2.7775 9.75781 -2.7775 0 -12.31877 -3.40917 -8.85417 -3.40917 0 8.85395 -3.40917 12.31901 -3.40917 0 -12.31877 -4.04083 -8.5821 -4.04083 0 8.58233 -4.04083 12.31901 -4.04083 0 -12.31877 -4.6725 -8.25261 -4.6725 0 8.25284 -4.6725 12.31901 -4.6725 0 -12.31877 -5.30417 -7.8584 -5.30417 0 7.85864 -5.30417 12.31901 -5.30417 0 -12.31877 -5.93583 -7.389 -5.93583 0 7.38878 -5.93583 12.31901 -5.93583 0 -12.31877 -6.5675 -6.82845 -6.5675 0 6.82823 -6.5675 12.31901 -6.5675 0 -12.31877 -7.19917 -6.1517 -7.19917 0 6.15193 -7.19917 12.31901 -7.19917 0 -12.31877 -7.83083 -5.31452 -7.83083 0 5.31476 -7.83083 12.31901 -7.83083 0 -12.31877 -8.4625 -4.22077 -8.4625 0 4.22055 -8.4625 12.31901 -8.4625 0 -12.31877 -9.09417 -2.55189 -9.09417 0 2.55213 -9.09417 12.31901 -9.09417 0 -12.31877 -9.72583 12.31901 -9.72583 0 -12.31877 -10.3575 12.31901 -10.3575 0 -12.31877 -10.98917 12.31901 -10.98917 0 -12.31877 -11.62083 12.31901 -11.62083 0 -12.31877 -12.2525 12.31901 -12.2525 0</L>
+<P r="0">-12.07072 3.0685 -9.8215 3.0685 -9.8215 -3.0685 -12.1485 -3.0685 -12.1485 3.0685 -12.07072 3.0685</P>
+<P r="0">9.89928 3.0685 12.1485 3.0685 12.1485 -3.0685 9.8215 -3.0685 9.8215 3.0685 9.89928 3.0685</P>
+<P r="0">9.42561 -0.23331 9.41696 -0.46638 9.40254 -0.69916 9.38237 -0.93151 9.35646 -1.16329 9.32483 -1.39436 9.28748 -1.62458 9.24446 -1.8538 9.19578 -2.08189 9.14147 -2.30871 9.08157 -2.53411 9.01611 -2.75796 8.94514 -2.98013 8.86869 -3.20047 8.78681 -3.41885 8.69956 -3.63514 8.60699 -3.84921 8.50914 -4.06092 8.4061 -4.27015 8.29791 -4.47676 8.18464 -4.68063 8.06636 -4.88164 7.94315 -5.07967 7.81507 -5.27458 7.68222 -5.46627 7.54466 -5.65461 7.40249 -5.8395 7.25579 -6.02081 7.10465 -6.19843 6.94916 -6.37226 6.78942 -6.5422 6.62553 -6.70813 6.45758 -6.86996 6.28568 -7.02758 6.10993 -7.1809 5.93045 -7.32983 5.74733 -7.47427 5.5607 -7.61414 5.37067 -7.74936 5.17735 -7.87982 4.98086 -8.00547 4.78133 -8.12622 4.57887 -8.242 4.37361 -8.35273 4.16567 -8.45836 3.95518 -8.5588 3.74228 -8.65402 3.52708 -8.74393 3.30972 -8.8285 3.09034 -8.90766 2.86907 -8.98137 2.64604 -9.04959 2.4214 -9.11227 2.19527 -9.16937 1.9678 -9.22087 1.73913 -9.26672 1.50939 -9.3069 1.27872 -9.34139 1.04728 -9.37016 0.81519 -9.39319 0.58261 -9.41048 0.34967 -9.42201 0.11651 -9.42778 -0.11671 -9.42778 -0.34987 -9.42201 -0.58281 -9.41047 -0.81539 -9.39318 -1.04748 -9.37013 -1.27892 -9.34136 -1.50959 -9.30687 -1.73932 -9.26668 -1.968 -9.22082 -2.19547 -9.16933 -2.42159 -9.11222 -2.64624 -9.04953 -2.86926 -8.98131 -3.09053 -8.90759 -3.30991 -8.82843 -3.52727 -8.74386 -3.74246 -8.65394 -3.95537 -8.55872 -4.16585 -8.45827 -4.37379 -8.35264 -4.57905 -8.2419 -4.7815 -8.12612 -4.98104 -8.00537 -5.17752 -7.87971 -5.37084 -7.74924 -5.56087 -7.61402 -5.74749 -7.47415 -5.9306 -7.3297 -6.11009 -7.18077 -6.28583 -7.02744 -6.45773 -6.86982 -6.62567 -6.70799 -6.78956 -6.54205 -6.9493 -6.37212 -7.10478 -6.19828 -7.25592 -6.02065 -7.40262 -5.83934 -7.54479 -5.65445 -7.68234 -5.46611 -7.81519 -5.27441 -7.94326 -5.0795 -8.06646 -4.88147 -8.18474 -4.68046 -8.298 -4.47658 -8.40619 -4.26997 -8.50923 -4.06074 -8.60707 -3.84902 -8.69964 -3.63496 -8.78689 -3.41866 -8.86876 -3.20028 -8.9452 -2.97994 -9.01617 -2.75777 -9.08162 -2.53392 -9.14152 -2.30851 -9.19582 -2.0817 -9.2445 -1.8536 -9.28752 -1.62438 -9.32486 -1.39416 -9.35649 -1.16309 -9.38239 -0.93131 -9.40256 -0.69895 -9.41697 -0.46617 -9.42562 -0.23311 -9.4285 0.0001 -9.42561 0.23331 -9.41696 0.46638 -9.40254 0.69916 -9.38237 0.93151 -9.35646 1.16329 -9.32483 1.39436 -9.28748 1.62458 -9.24446 1.8538 -9.19578 2.08189 -9.14147 2.30871 -9.08157 2.53411 -9.01611 2.75796 -8.94514 2.98013 -8.86869 3.20047 -8.78681 3.41885 -8.69956 3.63514 -8.60699 3.84921 -8.50914 4.06092 -8.4061 4.27015 -8.29791 4.47676 -8.18464 4.68063 -8.06636 4.88164 -7.94315 5.07967 -7.81507 5.27458 -7.68222 5.46627 -7.54466 5.65461 -7.40249 5.8395 -7.25579 6.02081 -7.10465 6.19843 -6.94916 6.37226 -6.78942 6.5422 -6.62553 6.70813 -6.45758 6.86996 -6.28568 7.02758 -6.10993 7.1809 -5.93045 7.32983 -5.74733 7.47427 -5.5607 7.61414 -5.37067 7.74936 -5.17735 7.87982 -4.98086 8.00547 -4.78133 8.12622 -4.57887 8.242 -4.37361 8.35273 -4.16567 8.45836 -3.95518 8.5588 -3.74228 8.65402 -3.52708 8.74393 -3.30972 8.8285 -3.09034 8.90766 -2.86907 8.98137 -2.64604 9.04959 -2.4214 9.11227 -2.19527 9.16937 -1.9678 9.22087 -1.73913 9.26672 -1.50939 9.3069 -1.27872 9.34139 -1.04728 9.37016 -0.81519 9.39319 -0.58261 9.41048 -0.34967 9.42201 -0.11651 9.42778 0.11671 9.42778 0.34987 9.42201 0.58281 9.41047 0.81539 9.39318 1.04748 9.37013 1.27892 9.34136 1.50959 9.30687 1.73932 9.26668 1.968 9.22082 2.19547 9.16933 2.42159 9.11222 2.64624 9.04953 2.86926 8.98131 3.00302 8.93675 3.01414 8.98026 3.11125 9.19515 3.13152 9.21873 3.1315 9.8001 2.99091 9.89124 2.81531 10.04562 2.66832 10.22745 2.55418 10.4315 2.54146 10.46745 2.47382 10.32837 2.343 10.13459 2.18131 9.9657 1.9934 9.82656 1.78469 9.72119 1.56116 9.6526 1.32926 9.62277 1.09566 9.63257 0.86707 9.6817 0.65007 9.76876 0.45091 9.89124 0.27531 10.04562 0.12832 10.22745 0.01418 10.4315 0.00146 10.46745 -0.06618 10.32837 -0.197 10.13459 -0.35869 9.9657 -0.5466 9.82656 -0.75531 9.72119 -0.97884 9.6526 -1.21074 9.62277 -1.44434 9.63257 -1.67293 9.6817 -1.88993 9.76876 -2.08909 9.89124 -2.26469 10.04562 -2.41168 10.22745 -2.52582 10.4315 -2.53854 10.46745 -2.60618 10.32837 -2.737 10.13459 -2.89869 9.9657 -3.0866 9.82656 -3.29531 9.72119 -3.51884 9.6526 -3.75074 9.62277 -3.98434 9.63257 -4.21293 9.6817 -4.42993 9.76876 -4.62909 9.89124 -4.80469 10.04562 -4.95168 10.22745 -4.97141 10.26272 -4.9715 9.6215 -7.7285 9.6215 -7.7285 12.3785 -4.9715 12.3785 -4.9715 11.74238 -4.95252 11.7713 -4.80574 11.95329 -4.63031 12.10786 -4.43128 12.23056 -4.21438 12.31785 -3.98585 12.36724 -3.75225 12.37729 -3.52032 12.34772 -3.29672 12.27938 -3.08789 12.17423 -2.89983 12.0353 -2.73795 11.86659 -2.60692 11.67295 -2.54242 11.53046 -2.52644 11.56712 -2.41252 11.7713 -2.26574 11.95329 -2.09031 12.10786 -1.89128 12.23056 -1.67438 12.31785 -1.44585 12.36724 -1.21225 12.37729 -0.98032 12.34772 -0.75672 12.27938 -0.54789 12.17423 -0.35983 12.0353 -0.19795 11.86659 -0.06692 11.67295 -0.00242 11.53046 0.01356 11.56712 0.12748 11.7713 0.27426 11.95329 0.44969 12.10786 0.64872 12.23056 0.86562 12.31785 1.09415 12.36724 1.32775 12.37729 1.55968 12.34772 1.78328 12.27938 1.99211 12.17423 2.18017 12.0353 2.34205 11.86659 2.47308 11.67295 2.53758 11.53046 2.55356 11.56712 2.66748 11.7713 2.81426 11.95329 2.98969 12.10786 3.18872 12.23056 3.40562 12.31785 3.63415 12.36724 3.86775 12.37729 4.09968 12.34772 4.32328 12.27938 4.53211 12.17423 4.72017 12.0353 4.88205 11.86659 5.01308 11.67295 5.07758 11.53046 5.09356 11.56712 5.20748 11.7713 5.35426 11.95329 5.52969 12.10786 5.72872 12.23056 5.94562 12.31785 6.17415 12.36724 6.40775 12.37729 6.63968 12.34772 6.86328 12.27938 7.07211 12.17423 7.26017 12.0353 7.42205 11.86659 7.55308 11.67295 7.6495 11.45995 7.70854 11.23371 7.7285 11 7.7088 10.76778 7.65001 10.54148 7.55382 10.32837 7.423 10.13459 7.26131 9.9657 7.0734 9.82656 7.02836 9.80382 7.0285 6.28454 7.10478 6.19828 7.25592 6.02065 7.40262 5.83934 7.54479 5.65445 7.68234 5.46611 7.81519 5.27441 7.94326 5.0795 8.06646 4.88147 8.18474 4.68046 8.298 4.47658 8.40619 4.26997 8.50923 4.06074 8.60707 3.84902 8.69964 3.63496 8.78689 3.41866 8.86876 3.20028 8.9452 2.97994 9.01617 2.75777 9.08162 2.53392 9.14152 2.30851 9.19582 2.0817 9.2445 1.8536 9.28752 1.62438 9.32486 1.39416 9.35649 1.16309 9.38239 0.93131 9.40256 0.69895 9.41697 0.46617 9.42562 0.23311 9.4285 0 9.42561 -0.23331</P>
+<P r="0">-12.38227 -12.3825 12.3825 -12.3825 12.3825 12.3825 -12.3825 12.3825 -12.3825 -12.3825</P>
+<S>-10.985 3.06759 -10.985 -3.06759 0.3 0 -12.14764 0 -9.82236 0 0.3 0 10.985 3.06759 10.985 -3.06759 0.3 0 9.82236 0 12.14764 0 0.3 0 -6.35 12.37759 -6.35 9.62241 0.5 0 -7.72759 11 -6.35 11 0.5 0</S>
+</Fill>
+<Fill Id="1">
+<L>-12.31877 11.75083 -7.79095 11.75083 2 7.56834 11.75083 12.31901 11.75083 2 -12.31877 11.11917 -7.79095 11.11917 2 7.78572 11.11917 12.31901 11.11917 2 -12.31877 10.4875 -7.79095 10.4875 2 7.6923 10.4875 12.31901 10.4875 2 -12.31877 9.85583 -7.79095 9.85583 2 5.08507 9.85583 5.51953 9.85583 2 7.18051 9.85583 12.31901 9.85583 2 -12.31877 9.22417 -4.55118 9.22417 2 5.54125 9.22417 12.31901 9.22417 2 -12.31877 8.5925 -6.89226 8.5925 2 5.55082 8.5925 12.31901 8.5925 2 -12.31877 7.96083 -7.56081 7.96083 2 5.55082 7.96083 12.31901 7.96083 2 -12.31877 7.32917 -8.18698 7.32917 2 5.55082 7.32917 12.31901 7.32917 2 -12.31877 6.6975 -8.33601 6.6975 2 5.55082 6.6975 12.31901 6.6975 2 -12.31877 6.06583 -8.33601 6.06583 2 5.55082 6.06583 12.31901 6.06583 2 -12.31877 5.43417 -8.33601 5.43417 2 5.55082 5.43417 12.31901 5.43417 2 -12.31877 4.8025 -8.33601 4.8025 2 5.55082 4.8025 12.31901 4.8025 2 -12.31877 4.17083 -8.33601 4.17083 2 5.55082 4.17083 12.31901 4.17083 2 5.55082 3.53917 12.31901 3.53917 2 5.41866 2.9075 12.31901 2.9075 2 4.7975 2.27583 12.31901 2.27583 2 4.16586 1.64417 12.31901 1.64417 2 -12.31877 1.0125 -11.84786 1.0125 2 -0.96565 1.0125 12.31901 1.0125 2 -12.31877 0.38083 -10.49388 0.38083 2 -1.59774 0.38083 12.31901 0.38083 2 -12.31877 -0.25083 -11.71159 -0.25083 2 -2.22938 -0.25083 12.31901 -0.25083 2 -2.86103 -0.8825 12.31901 -0.8825 2 -6.71786 -1.51417 12.31901 -1.51417 2 -6.70419 -2.14583 12.31901 -2.14583 2 -6.70419 -2.7775 12.31901 -2.7775 2 -6.71285 -3.40917 12.31901 -3.40917 2 -6.85412 -4.04083 12.31901 -4.04083 2 -6.85412 -4.6725 -2.59108 -4.6725 2 2.59086 -4.6725 12.31901 -4.6725 2 -6.85412 -5.30417 -2.59108 -5.30417 2 2.59086 -5.30417 12.31901 -5.30417 2 -6.54241 -5.93583 -2.59108 -5.93583 2 2.59086 -5.93583 12.31901 -5.93583 2 3.08897 -6.5675 12.31901 -6.5675 2 3.67049 -7.19917 12.31901 -7.19917 2 0.71964 -7.83083 2.25878 -7.83083 2 3.74112 -7.83083 12.31901 -7.83083 2 -2.25992 -8.4625 -0.74082 -8.4625 2 0.74106 -8.4625 2.25878 -8.4625 2 3.74112 -8.4625 12.31901 -8.4625 2 -7.21552 -9.09417 -4.34108 -9.09417 2 -1.65881 -9.09417 -1.34102 -9.09417 2 1.3408 -9.09417 1.65905 -9.09417 2 4.34086 -9.09417 12.31901 -9.09417 2 -7.17405 -9.72583 -4.34108 -9.72583 2 -1.65881 -9.72583 -1.34102 -9.72583 2 1.3408 -9.72583 1.65905 -9.72583 2 4.34086 -9.72583 12.31901 -9.72583 2 -7.28616 -10.3575 -4.34108 -10.3575 2 -1.65881 -10.3575 -1.34102 -10.3575 2 1.3408 -10.3575 1.65905 -10.3575 2 4.34086 -10.3575 12.31901 -10.3575 2 -7.17587 -10.98917 -4.34108 -10.98917 2 -1.65881 -10.98917 -1.34102 -10.98917 2 1.3408 -10.98917 1.65905 -10.98917 2 4.34086 -10.98917 12.31901 -10.98917 2 -7.17405 -11.62083 -4.34108 -11.62083 2 -1.65881 -11.62083 -1.34102 -11.62083 2 1.3408 -11.62083 1.65905 -11.62083 2 4.34086 -11.62083 12.31901 -11.62083 2 -7.45386 -12.2525 12.31901 -12.2525 2</L>
+<P r="2">-12.16576 -10.33057 -12.24531 -10.11768 -12.26252 -9.95503 -12.26253 -9.34569 -12.24888 -9.19994 -12.17426 -8.98527 -12.0825 -8.84732 -12.0825 -3.72492 -12.10264 -3.69888 -12.19906 -3.51022 -12.2325 -3.3 -12.2325 -1.6505 -12.19953 -1.44121 -12.10338 -1.2522 -12.0825 -1.05667 -12.0825 -0.96545 -12.07429 -0.85981 -12.00907 -0.65823 -11.88407 -0.48593 -11.66938 -0.27125 -11.58888 -0.20236 -11.40022 -0.10594 -11.19 -0.0725 -10.50726 -0.0724 -10.51749 -0.003 -10.48482 0.23025 -10.4233 0.36626 -10.49377 0.55324 -10.51664 0.78765 -10.49498 0.9013 -10.50962 0.90565 -10.71526 1.00244 -10.86357 1.09702 -10.92949 1.05582 -10.9997 1.02244 -11.07326 0.99733 -11.14922 0.98081 -11.22657 0.97309 -11.33 0.9725 -11.555 0.9725 -11.63261 0.97696 -11.70919 0.99028 -11.78375 1.01228 -11.85529 1.04268 -11.92288 1.08108 -11.98563 1.12696 -12.04271 1.17974 -12.09337 1.2387 -12.13694 1.30307 -12.17285 1.37202 -12.20062 1.44462 -12.2199 1.51993 -12.23042 1.59702 -12.2325 1.65081 -12.23205 3.32467 -12.22477 3.40206 -12.20867 3.47811 -12.18397 3.55181 -12.15098 3.6222 -12.11015 3.68835 -12.06201 3.74939 -12.0072 3.80451 -11.94643 3.85298 -11.88051 3.89418 -11.8103 3.92756 -11.73674 3.95267 -11.66078 3.96919 -11.58342 3.9769 -11.48 3.9775 -11.23033 3.97705 -11.15294 3.96977 -11.07689 3.95367 -11.00319 3.92897 -10.9328 3.89598 -10.86659 3.8551 -10.84107 3.84341 -10.66037 3.98089 -10.44765 4.0603 -10.285 4.0775 -9.98544 4.0775 -9.83991 4.06384 -9.62542 3.98935 -9.44146 3.8559 -9.41388 3.84764 -9.22522 3.94406 -9.015 3.9775 -8.7155 3.9775 -8.50621 3.94453 -8.3172 3.84838 -8.2725 3.86317 -8.2725 6.905 -8.23937 7.11426 -8.14308 7.30321 -8.07367 7.38447 -6.97907 8.47907 -6.80767 8.60361 -6.60598 8.66913 -6.49936 8.6775 -4.88132 8.6775 -4.87935 8.68463 -4.78271 8.89009 -4.63064 9.059 -4.4875 9.15301 -4.48735 9.80523 -4.62863 9.89214 -4.80409 10.04643 -4.95094 10.22815 -4.97244 10.26658 -4.9725 9.6225 -7.7275 9.6225 -7.7275 12.3775 -4.9725 12.3775 -4.9725 11.73879 -4.9516 11.77088 -4.8049 11.95272 -4.62958 12.10716 -4.43068 12.22974 -4.21393 12.31695 -3.98555 12.36627 -3.75212 12.37628 -3.52036 12.34671 -3.29694 12.27839 -3.08827 12.17329 -2.90036 12.03444 -2.73863 11.86583 -2.60771 11.67231 -2.54233 11.52784 -2.52546 11.56686 -2.4116 11.77088 -2.2649 11.95272 -2.08958 12.10716 -1.89068 12.22974 -1.67393 12.31695 -1.44555 12.36627 -1.21212 12.37628 -0.98036 12.34671 -0.75694 12.27839 -0.54827 12.17329 -0.36036 12.03444 -0.19863 11.86583 -0.06771 11.67231 -0.00233 11.52784 0.01454 11.56686 0.1284 11.77088 0.2751 11.95272 0.45042 12.10716 0.64932 12.22974 0.86607 12.31695 1.09445 12.36627 1.32788 12.37628 1.55964 12.34671 1.78306 12.27839 1.99173 12.17329 2.17964 12.03444 2.34137 11.86583 2.47229 11.67231 2.53767 11.52784 2.55454 11.56686 2.6684 11.77088 2.8151 11.95272 2.99042 12.10716 3.18932 12.22974 3.40607 12.31695 3.63445 12.36627 3.86788 12.37628 4.09964 12.34671 4.32306 12.27839 4.53173 12.17329 4.71964 12.03444 4.88137 11.86583 5.01229 11.67231 5.07767 11.52784 5.0947 11.56722 5.1288 11.63733 5.16682 11.70539 5.20862 11.7712 5.25408 11.83454 5.30305 11.89521 5.35537 11.953 5.41088 12.00775 5.4694 12.05927 5.53074 12.10739 5.5947 12.15197 5.66108 12.19285 5.72967 12.22992 5.80025 12.26304 5.87258 12.29212 5.94645 12.31706 6.02161 12.33778 6.09782 12.35422 6.17484 12.36632 6.25242 12.37404 6.33031 12.37736 6.40827 12.37627 6.48604 12.37077 6.56337 12.36087 6.64002 12.34662 6.71574 12.32806 6.79029 12.30524 6.86343 12.27824 6.93492 12.24715 7.00454 12.21206 7.07207 12.17308 7.13728 12.13035 7.19997 12.084 7.25993 12.03418 7.31698 11.98104 7.37094 11.92477 7.42162 11.86553 7.46887 11.80351 7.51254 11.73893 7.55248 11.67197 7.58857 11.60286 7.6207 11.53183 7.64875 11.45908 7.67264 11.38487 7.6923 11.30943 7.70765 11.23299 7.71866 11.15581 7.72528 11.07813 7.7275 11 7.7253 10.92226 7.7187 10.84458 7.70772 10.76739 7.69238 10.69095 7.67275 10.6155 7.64888 10.54128 7.62085 10.46854 7.58874 10.39749 7.55267 10.32837 7.51275 10.26141 7.4691 10.19681 7.42187 10.13478 7.3712 10.07552 7.31726 10.01923 7.26023 9.96608 7.20027 9.91624 7.1376 9.86987 7.0724 9.82712 7.00489 9.78813 6.93528 9.75302 6.86379 9.72191 6.79066 9.69489 6.71612 9.67205 6.6404 9.65346 6.56376 9.63919 6.48643 9.62927 6.40866 9.62375 6.3307 9.62264 6.25281 9.62593 6.17523 9.63363 6.0982 9.64571 6.02199 9.66212 5.94682 9.68282 5.87295 9.70774 5.8006 9.7368 5.73002 9.76991 5.66142 9.80695 5.59503 9.84782 5.53105 9.89238 5.4697 9.94048 5.41117 9.99198 5.35564 10.04671 5.3033 10.1045 5.25431 10.16515 5.20884 10.22847 5.16702 10.29427 5.12898 10.36233 5.09486 10.43243 5.08031 10.46719 5.01286 10.32871 4.88211 10.13508 4.81378 10.06373 5.28907 9.58831 5.41361 9.41691 5.47913 9.21521 5.4875 9.10859 5.4875 3.31 5.45437 3.10074 5.35808 2.91179 5.28859 2.83045 3.97907 1.52093 3.80767 1.39639 3.60598 1.33087 3.49934 1.3225 -0.71931 1.32256 -3.27093 -1.22907 -3.44233 -1.35361 -3.64402 -1.41913 -3.75063 -1.4275 -6.80488 -1.4275 -6.80094 -1.43978 -6.7675 -1.65 -6.7675 -3.2995 -6.80047 -3.50879 -6.89662 -3.6978 -6.9175 -3.85604 -6.9175 -5.6245 -6.21936 -6.32251 -2.5275 -6.32243 -2.5275 -4.4725 2.5275 -4.4725 2.5275 -6.32299 2.70926 -6.35563 2.89821 -6.45192 2.97943 -6.5213 3.47905 -7.02092 3.6036 -7.19232 3.66911 -7.39401 3.67748 -7.50067 3.67733 -8.8225 4.27748 -8.8225 4.27752 -12.1775 1.72252 -12.1775 1.72248 -8.8225 2.32245 -8.8225 2.32248 -7.78046 2.21949 -7.67762 0.59587 -7.6775 0.60361 -7.69233 0.66913 -7.89402 0.6775 -8.00068 0.67735 -8.8225 1.2775 -8.8225 1.2775 -12.1775 -1.2775 -12.1775 -1.2775 -8.8225 -0.67753 -8.8225 -0.6775 -8.2805 -0.7805 -8.17764 -2.40426 -8.1775 -2.39639 -8.19233 -2.33087 -8.39402 -2.3225 -8.50066 -2.32265 -8.8225 -1.7225 -8.8225 -1.7225 -12.1775 -4.2775 -12.1775 -4.2775 -8.8225 -3.67753 -8.8225 -3.6775 -8.78065 -3.7805 -8.67763 -7.61624 -8.6775 -7.58491 -8.69729 -7.41612 -8.84916 -7.29841 -9.04333 -7.24182 -9.26344 -7.2375 -9.34604 -7.2375 -9.95434 -7.25115 -10.10009 -7.32564 -10.31458 -7.4591 -10.49854 -7.3917 -10.58024 -7.3484 -10.64481 -7.31176 -10.71338 -7.28216 -10.78527 -7.25989 -10.85976 -7.24516 -10.9361 -7.23813 -11.01352 -7.2375 -11.12125 -7.2375 -11.655 -7.24138 -11.73265 -7.25301 -11.80952 -7.27225 -11.88485 -7.29892 -11.95788 -7.33274 -12.02788 -7.37339 -12.09415 -7.42046 -12.15603 -7.47347 -12.2129 -7.53189 -12.2642 -7.59515 -12.3094 -7.62839 -12.32957 -7.6626 -12.34806 -7.69769 -12.36481 -7.73375 -12.37985 -7.56909 -12.3825 12.3825 -12.3825 12.3825 12.3825 -12.3825 12.3825 -12.3825 -12.3825 -11.75929 -12.3825 -11.78783 -12.3711 -11.82325 -12.35506 -11.85783 -12.33728 -11.89148 -12.31778 -11.9241 -12.29663 -11.98599 -12.24956 -12.04286 -12.19656 -12.09415 -12.13813 -12.13936 -12.07488 -12.17802 -12.00743 -12.20975 -11.93645 -12.23423 -11.86266 -12.25122 -11.7868 -12.26056 -11.70954 -12.26247 -11.65406 -12.26214 -11.02188 -12.25595 -10.94439 -12.24204 -10.86789 -12.22057 -10.79317 -12.19174 -10.72097 -12.15585 -10.65201 -12.11325 -10.58697 -12.06431 -10.52647 -12.16576 -10.33057</P>
+<S>2.52659 -5.6 -2.52659 -5.6 0.3 2 0 -4.47341 0 -5.6 0.3 2 -12.26252 -11.35003 -10.99998 -11.35 0.3 2 -8.5 -11.35 -7.23747 -11.35 0.3 2 6.35 12.37659 6.35 9.62341 0.5 2 6.35 11 7.72659 11 0.5 2 4.27661 -11.14997 1.72343 -11.15003 0.3 2 3.00002 -11.15 3.00004 -12.17685 0.3 2 1.27659 -11.15 -1.27659 -11.15 0.3 2 0 -11.15 0 -12.17685 0.3 2 -1.72341 -11.15 -4.27659 -11.15 0.3 2 -3 -11.15 -3 -12.17685 0.3 2 -12.23331 2.475 -11.405 2.475 0.3 2 -11.405 0.97221 -11.405 3.97779 0.3 2</S>
+</Fill>
+</CopperPourFills>
+</Board>
+</Source>
