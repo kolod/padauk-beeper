@@ -25,7 +25,7 @@ PFS parts can be reprogrammed. PMS parts are one-time programmable.
 | Pin | Function |
 |---|---|
 | PA3 | Buzzer output (Timer2 square wave) |
-| PA4 | Melody select bit 0 |
+| PA5 | Melody select bit 0 |
 | PA6 | Melody select bit 1 |
 | PA7 | Melody select bit 2 |
 
@@ -41,7 +41,7 @@ The select pins are read once at power-up with internal pull-ups. A pin tied
 to GND reads as 1 and an open pin reads as 0. After reading, the pull-ups are
 switched off, so a pin tied to GND does not drain the battery.
 
-| # | PA7 | PA6 | PA4 | Melody |
+| # | PA7 | PA6 | PA5 | Melody |
 |---|---|---|---|---|
 | 0 | open | open | open | Ode to Joy (Beethoven) |
 | 1 | open | open | GND | Jingle Bells |
@@ -54,8 +54,11 @@ switched off, so a pin tied to GND does not drain the battery.
 
 To change the melody, change the jumpers and power-cycle the device.
 
-> PA4 and PA6 are also used for in-circuit programming. Remove the select
-> jumpers before reprogramming a PFS chip.
+> PA5 and PA6 are also used for in-circuit programming (PA5 carries the
+> programming voltage). Remove the select jumpers before reprogramming a PFS chip.
+>
+> PA5 is also the chip's reset input, but only when `CLKMD.0` is set; the firmware
+> keeps it cleared, so PA5 works as a normal input.
 >
 > The SOT23-6 package of PMS150C/G has no PA7, so only melodies 0–3 can be
 > selected there.
@@ -84,7 +87,7 @@ These settings are in [software/include/config.h](software/include/config.h):
 | Setting | Default | Meaning |
 |---|---|---|
 | `BUZZER_BIT` | 3 | Buzzer pin (PA3 is Timer2's output pin) |
-| `SEL0_BIT`, `SEL1_BIT`, `SEL2_BIT` | 4, 6, 7 | Melody select pins on port A |
+| `SEL0_BIT`, `SEL1_BIT`, `SEL2_BIT` | 5, 6, 7 | Melody select pins on port A |
 | `PAUSE_SECONDS` | 10 | Pause between melodies |
 | `NOTE_GAP_MS` | 25 | Silence at the end of each note, so that repeated notes are heard separately |
 
